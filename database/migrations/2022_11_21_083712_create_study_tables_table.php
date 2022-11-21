@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('study_tables', function (Blueprint $table) {
             $table->id();
-            $table->foreignId("study_id")->references("id")->on("studies");
+            $table->foreignId("study_id")->references("id")->on("study");
             $table->string("table_title");
             $table->timestamps();
         });

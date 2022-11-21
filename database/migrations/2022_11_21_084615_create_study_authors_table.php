@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('study_authors', function (Blueprint $table) {
             $table->id();
-            $table->foreignId("study_id")->references("id")->on("studies");
+            $table->foreignId("study_id")->references("id")->on("study");
             $table->string("prefix");
             $table->string("first_name");
             $table->string("middle_name")->nullable();

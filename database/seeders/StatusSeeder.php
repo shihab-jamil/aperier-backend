@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\Stutus;
+use App\Models\Status;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -17,7 +17,7 @@ class StatusSeeder extends Seeder
     {
         $array = ["With Editor", "In Review", "Revision Required" , "Accepted"];
         foreach ($array as $item){
-            Stutus::create([
+            Status::create([
                 "name" => $item
             ]);
         }

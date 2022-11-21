@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('studies', function (Blueprint $table) {
+        Schema::create('study', function (Blueprint $table) {
             $table->id();
             $table->foreignId("journal_id")->references("id")->on("journals");
             $table->string("title");
@@ -25,7 +25,8 @@ return new class extends Migration
             $table->boolean("not_published")->default(false);
             $table->boolean("ethical_guidelines")->default(false);
             $table->boolean("third_party_acknowledgement")->default(false);
-            $table->foreignId("status")->references("id")->on("status");
+            $table->foreignId("status_id")->references("id")->on("status");
+            $table->foreignId("study_type_id")->references("id")->on("study_types");
 
             $table->timestamps();
         });
@@ -38,6 +39,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('studies');
+        Schema::dropIfExists('study');
     }
 };

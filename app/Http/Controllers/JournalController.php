@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Journal;
+use App\Models\StudyType;
 use Illuminate\Http\Request;
 
 class JournalController extends Controller
@@ -14,7 +15,16 @@ class JournalController extends Controller
      */
     public function index()
     {
-        //
+        try {
+            $journals = Journal::all();
+            $studyTypes = StudyType::all();
+            $array["journals"] =  $journals;
+            $array["studyTypes"]= $studyTypes;
+
+            return sendSuccessResponse($array, "Data retrieved successfully", 200);
+        } catch (\Throwable $e) {
+            return sendErrorResponse('Database Error!', $e->getMessage(), 500);
+        }
     }
 
     /**

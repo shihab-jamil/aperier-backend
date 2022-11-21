@@ -20,5 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::post("sign-up", [\App\Http\Controllers\AuthController::class, "store"]);
 Route::post("login", [\App\Http\Controllers\AuthController::class, "login"]);
-
+Route::get("journals", [\App\Http\Controllers\JournalController::class, "index"]);
 Route::post("submit-study", [\App\Http\Controllers\StudiesController::class,"store"]);

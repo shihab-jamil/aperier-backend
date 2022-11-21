@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Stutus;
+use App\Models\Status;
 use Illuminate\Http\Request;
 
 class StutusController extends Controller
@@ -41,10 +41,10 @@ class StutusController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Stutus  $stutus
+     * @param  \App\Models\Status  $stutus
      * @return \Illuminate\Http\Response
      */
-    public function show(Stutus $stutus)
+    public function show(Status $stutus)
     {
         //
     }
@@ -52,10 +52,10 @@ class StutusController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Stutus  $stutus
+     * @param  \App\Models\Status  $stutus
      * @return \Illuminate\Http\Response
      */
-    public function edit(Stutus $stutus)
+    public function edit(Status $stutus)
     {
         //
     }
@@ -64,10 +64,10 @@ class StutusController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Stutus  $stutus
+     * @param  \App\Models\Status  $stutus
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Stutus $stutus)
+    public function update(Request $request, Status $stutus)
     {
         //
     }
@@ -75,10 +75,10 @@ class StutusController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Stutus  $stutus
+     * @param  \App\Models\Status  $stutus
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Stutus $stutus)
+    public function destroy(Status $stutus)
     {
         //
     }
