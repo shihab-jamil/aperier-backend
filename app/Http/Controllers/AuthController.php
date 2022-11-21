@@ -12,11 +12,22 @@ class AuthController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
-    public function index()
+    public function login(Request $request)
     {
-        //
+        try {
+            $user = User::where("email", $request->email)->first();
+            if($user && Hash::check($request->password, $user->password)){
+                return sendSuccessResponse($user, "User Login successfully", 200);
+            }else{
+                return sendErrorResponse('Email and password does not match with our records', 422);
+            }
+        }
+        catch (\Throwable $e) {
+            return sendErrorResponse('Database Error!', $e->getMessage(), 500);
+        }
+
     }
 
     /**
@@ -37,31 +48,35 @@ class AuthController extends Controller
      */
     public function store(Request $request)
     {
-        $areasOfExpertise = $request->areasOfExpertise;
-        $user = User::create([
-            "prefix" => $request->prefix,
-            "first_name" => $request->first_name,
-            "middle_name" => $request->middle_name,
-            "last_name" => $request->last_name,
-            "degree" => $request->degree,
-            "email" => $request->email,
-            "phone" => $request->phone,
-            "orchid" => $request->orchid,
-            "department" => $request->department,
-            "email_verified_at" => $request->email_verified_at,
-            "password" => Hash::make($request->password),
-            "receive_reviews_request" => $request->receive_reviews_request,
-            "join_editorial_team" => $request->join_editorial_team,
-            "privacy_acknowledgement" => $request->privacy_acknowledgement,
-        ]);
-
-        foreach ($areasOfExpertise AS $expertise){
-            if(!$expertise) continue;
-            AreasOfExpertise::create([
-                "user_id" => $user->id,
-                "area_name" => $expertise
+        try {
+            $areaOfExpertise = $request->areaOfExpertise;
+            $user = User::create([
+                "prefix" => $request->prefix,
+                "first_name" => $request->first_name,
+                "middle_name" => $request->middle_name,
+                "last_name" => $request->last_name,
+                "degree" => $request->degree,
+                "email" => $request->email,
+                "phone" => $request->phone,
+                "orchid" => $request->orchid,
+                "department" => $request->department,
+                "email_verified_at" => $request->email_verified_at,
+                "password" => Hash::make($request->password),
+                "receive_reviews_request" => $request->receive_reviews_request,
+                "join_editorial_team" => $request->join_editorial_team,
+                "privacy_acknowledgement" => $request->privacy_acknowledgement,
             ]);
 
+            foreach ($areaOfExpertise AS $expertise){
+                if(!$expertise) continue;
+                AreasOfExpertise::create([
+                    "user_id" => $user->id,
+                    "area_name" => $expertise
+                ]);
+            }
+            return sendSuccessResponse([], "User stored successfully", 200);
+        } catch (\Throwable $e) {
+            return sendErrorResponse('Database Error!', $e->getMessage(), 500);
         }
 
     }
