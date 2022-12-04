@@ -15,6 +15,10 @@
     "file": "assets/bird.efc9b1b5.png",
     "src": "resources/js/Assets/bird.png"
   },
+  "resources/js/Assets/logo.svg": {
+    "file": "assets/logo.ca67b92a.svg",
+    "src": "resources/js/Assets/logo.svg"
+  },
   "resources/js/Assets/news_1.png": {
     "file": "assets/news_1.f453352a.png",
     "src": "resources/js/Assets/news_1.png"
@@ -55,17 +59,13 @@
     "file": "assets/journal_6.932bc54d.png",
     "src": "resources/js/Assets/journal_6.png"
   },
-  "resources/js/Assets/logo.svg": {
-    "file": "assets/logo.ca67b92a.svg",
-    "src": "resources/js/Assets/logo.svg"
+  "resources/js/Assets/glasses.png": {
+    "file": "assets/glasses.5e1f1427.png",
+    "src": "resources/js/Assets/glasses.png"
   },
   "resources/js/Assets/welcome_background.png": {
     "file": "assets/welcome_background.13923e6c.png",
     "src": "resources/js/Assets/welcome_background.png"
-  },
-  "resources/js/Assets/glasses.png": {
-    "file": "assets/glasses.5e1f1427.png",
-    "src": "resources/js/Assets/glasses.png"
   },
   "resources/css/app.css": {
     "file": "assets/app.7c3c19f8.js",
@@ -73,7 +73,7 @@
     "isEntry": true
   },
   "resources/js/main.js": {
-    "file": "assets/main.c7ddeb0a.js",
+    "file": "assets/main.8aaadfc2.js",
     "src": "resources/js/main.js",
     "isEntry": true,
     "css": [
