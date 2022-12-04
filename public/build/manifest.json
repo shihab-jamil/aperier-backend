@@ -1,23 +1,27 @@
 {
+  "resources/js/Assets/bird.png": {
+    "file": "assets/bird.efc9b1b5.png",
+    "src": "resources/js/Assets/bird.png"
+  },
   "resources/js/Assets/Trophy.png": {
     "file": "assets/Trophy.25e9c9ca.png",
     "src": "resources/js/Assets/Trophy.png"
   },
-  "resources/js/Assets/man-with-books.png": {
-    "file": "assets/man-with-books.621c9989.png",
-    "src": "resources/js/Assets/man-with-books.png"
+  "resources/js/Assets/logo.svg": {
+    "file": "assets/logo.ca67b92a.svg",
+    "src": "resources/js/Assets/logo.svg"
   },
   "resources/js/Assets/journal-cover.png": {
     "file": "assets/journal-cover.fc738ed7.png",
     "src": "resources/js/Assets/journal-cover.png"
   },
-  "resources/js/Assets/bird.png": {
-    "file": "assets/bird.efc9b1b5.png",
-    "src": "resources/js/Assets/bird.png"
+  "resources/js/Assets/man-with-books.png": {
+    "file": "assets/man-with-books.621c9989.png",
+    "src": "resources/js/Assets/man-with-books.png"
   },
-  "resources/js/Assets/logo.svg": {
-    "file": "assets/logo.ca67b92a.svg",
-    "src": "resources/js/Assets/logo.svg"
+  "resources/js/Assets/books.png": {
+    "file": "assets/books.85e6d0ea.png",
+    "src": "resources/js/Assets/books.png"
   },
   "resources/js/Assets/news_1.png": {
     "file": "assets/news_1.f453352a.png",
@@ -31,18 +35,6 @@
     "file": "assets/news_3.54e084b0.png",
     "src": "resources/js/Assets/news_3.png"
   },
-  "resources/js/Assets/books.png": {
-    "file": "assets/books.85e6d0ea.png",
-    "src": "resources/js/Assets/books.png"
-  },
-  "resources/js/Assets/journal_1.png": {
-    "file": "assets/journal_1.0e107a9d.png",
-    "src": "resources/js/Assets/journal_1.png"
-  },
-  "resources/js/Assets/journal_2.png": {
-    "file": "assets/journal_2.f21901c5.png",
-    "src": "resources/js/Assets/journal_2.png"
-  },
   "resources/js/Assets/journal_3.png": {
     "file": "assets/journal_3.7dcfd42a.png",
     "src": "resources/js/Assets/journal_3.png"
@@ -51,13 +43,21 @@
     "file": "assets/journal_4.11861d88.png",
     "src": "resources/js/Assets/journal_4.png"
   },
-  "resources/js/Assets/journal_5.png": {
-    "file": "assets/journal_5.37879ff9.png",
-    "src": "resources/js/Assets/journal_5.png"
+  "resources/js/Assets/journal_1.png": {
+    "file": "assets/journal_1.0e107a9d.png",
+    "src": "resources/js/Assets/journal_1.png"
   },
   "resources/js/Assets/journal_6.png": {
     "file": "assets/journal_6.932bc54d.png",
     "src": "resources/js/Assets/journal_6.png"
+  },
+  "resources/js/Assets/journal_5.png": {
+    "file": "assets/journal_5.37879ff9.png",
+    "src": "resources/js/Assets/journal_5.png"
+  },
+  "resources/js/Assets/journal_2.png": {
+    "file": "assets/journal_2.f21901c5.png",
+    "src": "resources/js/Assets/journal_2.png"
   },
   "resources/js/Assets/glasses.png": {
     "file": "assets/glasses.5e1f1427.png",
