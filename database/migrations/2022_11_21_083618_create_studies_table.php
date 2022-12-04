@@ -29,7 +29,7 @@ return new class extends Migration
             $table->foreignId("status_id")->references("id")->on("status");
             $table->foreignId("study_type_id")->references("id")->on("study_types");
             $table->timestamps();
-            $table->timestamps('accepted_at');
+            $table->dateTime('accepted_at');
         });
     }
 
