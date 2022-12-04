@@ -24,6 +24,9 @@ return new class extends Migration
             $table->string('phone');
             $table->string('orchid');
             $table->string('department');
+            $table->string('institution');
+            $table->string('city');
+            $table->string('country');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->boolean("receive_reviews_request");

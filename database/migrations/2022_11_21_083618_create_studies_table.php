@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('study', function (Blueprint $table) {
             $table->id();
+            $table->foreignId("user_id")->references("id")->on("users");
             $table->foreignId("journal_id")->references("id")->on("journals");
             $table->string("title");
             $table->longText("abstract");
@@ -27,8 +28,8 @@ return new class extends Migration
             $table->boolean("third_party_acknowledgement")->default(false);
             $table->foreignId("status_id")->references("id")->on("status");
             $table->foreignId("study_type_id")->references("id")->on("study_types");
-
             $table->timestamps();
+            $table->timestamps('accepted_at');
         });
     }
 
