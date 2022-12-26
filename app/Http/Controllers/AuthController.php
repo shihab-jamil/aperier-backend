@@ -49,7 +49,7 @@ class AuthController extends Controller
     public function store(Request $request)
     {
         try {
-            $areaOfExpertise = $request->areaOfExpertise;
+//            $areaOfExpertise = $request->areaOfExpertise;
             $user = User::create([
                 "prefix" => $request->prefix,
                 "first_name" => $request->first_name,
@@ -70,13 +70,13 @@ class AuthController extends Controller
                 "privacy_acknowledgement" => $request->privacy_acknowledgement,
             ]);
 
-            foreach ($areaOfExpertise AS $expertise){
-                if(!$expertise) continue;
-                AreasOfExpertise::create([
-                    "user_id" => $user->id,
-                    "area_name" => $expertise
-                ]);
-            }
+//            foreach ($areaOfExpertise AS $expertise){
+//                if(!$expertise) continue;
+//                AreasOfExpertise::create([
+//                    "user_id" => $user->id,
+//                    "area_name" => $expertise
+//                ]);
+//            }
             return sendSuccessResponse([], "User stored successfully", 200);
         } catch (\Throwable $e) {
             return sendErrorResponse('Database Error!', $e->getMessage(), 500);

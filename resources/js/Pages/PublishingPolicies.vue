@@ -1,18 +1,18 @@
 <template>
   <div class="top-hero-image">
-    <p>Our research publishing policies and ethics</p>
+    <p>Our Research Publishing Policies and Ethics</p>
     <p>Find out more about publication ethics and our policies</p>
   </div>
   <div class="container">
     <div class="row">
       <div class="col-12 p-5">
         <AccordionComponent>
-          <AccordionItemComponent heading_id="headingOne" collapse_id="collapseOne" title="Ethical oversight">
+          <AccordionItemComponent heading_id="headingOne" collapse_id="collapseOne" title="Ethical Oversight">
             <p>The policy of the journals, issued by Aperier, concerning the oversight on how the ethical principles are
               observed is built on mutual trust of the publication process participants and hope for compulsory
               observance of all the publication ethics principles, described in the "Publishing policies" and "Editorial
               policies" of the company.</p>
-            <p>We focus on the СОРE definition, of Ethical oversight, namely &ldquo;Ethical oversight should include,
+            <p>We focus on the <a href="https://publicationethics.org/" target="_blank">СОРE</a>  definition, of Ethical oversight, namely &ldquo;Ethical oversight should include,
               but is not limited to, policies on consent to publication, publication on vulnerable populations, ethical
               conduct of research using animals, ethical conduct of research using human subjects, handling confidential
               data and of business/marketing practices&rdquo;. Based on this definition, the editorial staff of the
@@ -23,12 +23,12 @@
           </AccordionItemComponent>
 
           <AccordionItemComponent heading_id="headingTwo" collapse_id="collapseTwo" title="Authorship">
-            <p>We consider the author (co-author) of a research article as it is done by Committee on Publication Ethics
-              (COPE), that is the person who is the creator or originator of an idea (e.g., the author of the theory of
+            <p>We consider the author (co-author) of a research article as it is done by <a href="https://publicationethics.org/" target="_blank">Committee on Publication Ethics
+                (COPE)</a> , that is the person who is the creator or originator of an idea (e.g., the author of the theory of
               relativity) or the individual or individuals who develop and bring to fruition the product that
               disseminates intellectual or creative works. The status of the article writer means that this person
               performed the research and did not infringe the copyright and other persons' rights.</p>
-            <p>Aperier follows the International Committee of Medical Journal Editors (ICMJE) guidelines which state
+            <p>Aperier follows the <a href="https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html" target="_blank">International Committee of Medical Journal Editors (ICMJE)</a>  guidelines which state
               that in order to qualify for authorship of a manuscript, authors must meet all four criteria:</p>
             <ul>
               <li>Substantial contributions to the conception or design of the work; or the acquisition, analysis, or
@@ -98,7 +98,7 @@
               Aperier Journals.<br><br>FREE OF CHARGES</p>
           </AccordionItemComponent>
 
-          <AccordionItemComponent heading_id="headingFour" collapse_id="collapseFour" title="Copyright and permissions">
+          <AccordionItemComponent heading_id="headingFour" collapse_id="collapseFour" title="Copyright and Permissions">
             <p>Author&apos;s rights to the contents of the article are determined depending on whether article is
               published in open-access or as subscription article.<br>All articles published by MDPI are made
               immediately available worldwide under an open access license. This means:<br>everyone has free and
@@ -114,27 +114,22 @@
               not imply endorsement by the authors or Aperier.</p>
           </AccordionItemComponent>
 
-          <AccordionItemComponent heading_id="headingFive" collapse_id="collapseFive" title="Plagiarism">
-            <p>Plagiarism, Data Fabrication and Image Manipulation<br>Plagiarism is not acceptable in Aperier journals.
-              Plagiarism includes copying text, ideas, images, or data from another source, even from your own
-              publications, without giving credit to the original source. Reuse of text that is copied from another
-              source must be between quotation marks and the original source must be cited. If a study&apos;s design or
-              the manuscript&apos;s structure or language has been inspired by previous studies, these studies must be
-              explicitly cited. All Aperier submissions are checked for plagiarism. If plagiarism is detected during the
-              peer review process, the manuscript may be rejected. If plagiarism is detected after publication, an
-              investigation will take place and action taken in accordance with our policies.<br>Image files must not be
-              manipulated or adjusted in any way that could lead to misinterpretation of the information provided by the
-              original image. Irregular manipulation includes 1) introduction, enhancement, moving, or removing features
-              from the original image, 2) grouping of images that should obviously be presented separately (e.g., from
-              different parts of the same gel, or from different gels), or 3) modifying the contrast, brightness or
-              color balance to obscure, eliminate or enhance some information.<br>If irregular image manipulation is
-              identified and confirmed during the peer review process, we may reject the manuscript. If irregular image
-              manipulation is identified and confirmed after publication, we may correct or retract the paper.<br>Data
-              presented must be original and not inappropriately selected, manipulated, enhanced, or fabricated. This
-              includes 1) exclusion of data points to enhance significance of conclusions, 2) fabrication of data, 3)
-              selection of results that support a particular conclusion at the expense of contradictory data, 4)
-              deliberate selection of analysis tools or methods to support a particular conclusion (including
-              p-hacking). We strongly recommend preregistration of methods and analysis.</p>
+          <AccordionItemComponent heading_id="headingFive" collapse_id="collapseFive" title="Article Withdrawal & Correction">
+              <p>We adhere to the guidelines set forth in the joint statement of the International Publishers Association (IPA) and the International Federation of Library Associations (IFLA) on the withdrawal of journal articles from the internet. These explicitly state that a publication may only be deleted from a publisher&apos;s database if it:&nbsp;</p>
+              <ul>
+                  <li>Violates professional ethical standards, such as by violating the privacy of a study subject.&nbsp;</li>
+                  <li>A legal controversy exists.&nbsp;</li>
+                  <li>Includes locating erroneous or incorrect information that, if used, poses a significant health risk. </li>
+              </ul>
+              <p>Where feasible, we keep the relevant bibliographical citation for the deleted information (unless subject to legal dispute).&nbsp;</p>
+
+              <span><strong>Correction Notices</strong></span>
+              <p>&nbsp;Since the version of record cannot be altered to reflect changes, such as new author affiliations or new discoveries, all published research is essentially a &quot;snapshot&quot; of a certain point in time.&nbsp;</p>
+              <p>However, we acknowledge that mistakes might occasionally occur during the stages of research, writing, and publication. We can introduce one of the following corrective messages when these problems occur.&nbsp;</p>
+              <ul>
+                  <li>Erratum: This term often refers to a manufacturing error that was discovered after publication. If an erratum is published, it will be noted in the abstract of the paper&apos;s online version as well as in the printed edition of the journal&apos;s subsequent volume or issue.&nbsp;</li>
+                  <li>Name of author corrections; Aperier is dedicated to inclusion, diversity, and equality. Aperier is putting into effect an author name change policy as part of this. For whatever reason (including religious conversion, marriage, gender identity change, or divorce), if Aperier gets a request from an author seeking to alter their name on a published piece, we will do it right away. While we won&apos;t inquire about further information or the cause for the name change, there are situations when we may need additional details (such the article reference) in order to perform the change successfully. We will try our best to change the name and, if necessary, any pronouns throughout the post.</li>
+              </ul>
           </AccordionItemComponent>
 
           <AccordionItemComponent heading_id="headingSix" collapse_id="collapseSix" title="Citation Policies">

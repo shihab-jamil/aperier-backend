@@ -8,7 +8,7 @@
             <div class="col-12 p-5">
                 <AccordionComponent>
                     <AccordionItemComponent heading_id="headingOne" collapse_id="collapseOne"
-                        title="Editorial independence ">
+                        title="Editorial Independence ">
                         <p>&ldquo;Business Perspectives&rdquo; issues the journals, founded by the universities and
                             organizations, and where the company itself is a founder. At the same time the
                             &ldquo;Editorial policies&rdquo; are equal and independent for all the journals without
@@ -40,7 +40,7 @@
                     </AccordionItemComponent>
 
                     <AccordionItemComponent heading_id="headingTwo" collapse_id="collapseTwo"
-                        title="Guidelines for editors and reviewers">
+                        title="Guidelines for Editors and Reviewers">
                         <p>The Editorial Board consists of international experts in their fields. All members of the
                             Board occupy the positions in educational and research institutions. The roles of the
                             Editorial Board members are the following:<br><br>provide expertise in definite research
@@ -118,7 +118,7 @@
                     </AccordionItemComponent>
 
 
-                    <AccordionItemComponent heading_id="headingFour" collapse_id="collapseFour" title="Peer review">
+                    <AccordionItemComponent heading_id="headingFour" collapse_id="collapseFour" title="Peer Review">
                         <p>Peer review plays a significant role in the publication of scholarly journals through
                             assessment of validity, quality and originality of submitted manuscripts. There are three
                             types of peer review: &ldquo;open&rdquo;, &ldquo;single blind&rdquo; and &ldquo;double
@@ -189,7 +189,7 @@
                     </AccordionItemComponent>
 
                     <AccordionItemComponent heading_id="headingSix" collapse_id="collapseSix"
-                        title="Conflicts of interest">
+                        title="Conflicts of Interest">
                         <p><span style="white-space:pre-wrap;"><strong>Conflicts of interest </strong><br>It is very
                                 important for a scientific journal to be scrupulous and always adhere to the best
                                 publishing practices and principles of publication ethics (COPE). Therefore, all
@@ -304,7 +304,7 @@
                     </AccordionItemComponent>
 
                     <AccordionItemComponent heading_id="headingSeven" collapse_id="collapseSeven"
-                        title="Complaints policy">
+                        title="Complaints Policy">
                         <p><br>This procedure applies to complaints about the journal, its staff, editorial board or
                             publisher, the policies, procedures, or actions of the LLC &ldquo;CPC &ldquo;Business
                             Perspectives&rdquo; editorial staff. We welcome complaints as they provide an opportunity
@@ -338,7 +338,7 @@
         </div>
     </div>
 </template>
-  
+
 <script>
 import AccordionComponent from "../Components/Accordion/AccordionComponent.vue";
 import AccordionItemComponent from "../Components/Accordion/AccordionItemComponent.vue";
@@ -347,7 +347,7 @@ export default {
     components: { AccordionComponent, AccordionItemComponent },
 };
 </script>
-  
+
 <style scoped>
 .top-hero-image {
     display: flex;
@@ -374,4 +374,3 @@ export default {
     color: #000000;
 }
 </style>
-  

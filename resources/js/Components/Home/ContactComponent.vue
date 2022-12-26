@@ -17,7 +17,7 @@
                             Website : aperier.com</p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-8 pl-4">
                     <div class="card-2">
                         <div class="row px-5 py-3">
                             <div class="col-6">
@@ -60,10 +60,10 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px;
+    padding: 33px;
 
     width: 100%;
-    height: 286px;
+    height: fit-content;
 
     background: #F6F8F9;
     box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.1);
@@ -72,7 +72,7 @@ export default {
 
 .card-2 {
     width: 100%;
-    height: 286px;
+    height: fit-content;
     left: 474px;
     top: 0px;
 

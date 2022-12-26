@@ -79,6 +79,7 @@ class StudiesController extends Controller
                 "ethical_guidelines" => $request->ethical_guidelines,
                 "third_party_acknowledgement" => $request->third_party_acknowledgement,
                 "status_id" => $status,
+                "accepted_at" => null
             ]);
             $volume = "Volume ";
             $volume .= (int)date('Y') - 2021;

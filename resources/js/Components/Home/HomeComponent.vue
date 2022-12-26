@@ -14,14 +14,14 @@
       <div class="join-us container-fluid p-5">
             <div class="row">
                 <div class="col-8 mt-5 d-flex flex-column">
-                    <p class="underline-title mt-5">Interested in joining our global network?</p>
+                    <p class="underline-title mt-5">Interested in Joining Our Global Network?</p>
                     <p>We pride ourselves on providing a supportive and accessible service for our authors throughout the
                         publishing process. We offer fast publication while providing rigorous peer review to maintain the
                         integrity of information. We are committed to the highest standards of peer review. We’re committed
                         to promoting your research as widely as we can and providing as much visibility and exposure for
                         your article as possible.
                         Join US</p>
-                    <button class="align-self-end green-button">Join us</button>
+                    <router-link :to="{name: 'Sign Up'}" class="align-self-end green-button">Join us</router-link>
                 </div>
                 <div class="col-4">
                     <img src="../../Assets/books.png" class="img-fluid" alt="">

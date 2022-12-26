@@ -2,8 +2,8 @@
     <section class="container-fluid white-color p-5">
         <section-title title="Awards" />
         <div class="container">
-            <div class="row" >
-                <div class="col-4">
+            <div class="row g-4" >
+                <div class="col-4 px-4">
                     <div class="custom-card">
                         <p class="custom-card-title">Best Article Award 2023</p>
                         <p class="custom-card-text">We are pleased to announce the “Best Paper Award” for research and
@@ -12,7 +12,7 @@
                             Committee.</p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 px-4">
                     <div class="custom-card">
                         <p class="custom-card-title">Best Reviewer Award 2023</p>
                         <p class="custom-card-text">We wish to acknowledge our reviewers who so generously offer their
@@ -21,7 +21,7 @@
                             reviewing manuscripts.</p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 px-4">
                     <div class="custom-card">
                         <p class="custom-card-title">Travel Award 2023</p>
                         <p class="custom-card-text">This award provides financial support for the winners to attend an
@@ -47,7 +47,7 @@ export default {
 
 <style scoped>
 .custom-card {
-    width: 395px;
+    width: 100%;
     height: 230px;
     background: #F6F8F9;
     box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.1);
@@ -56,7 +56,6 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    ;
     padding: 30px;
 
 }
