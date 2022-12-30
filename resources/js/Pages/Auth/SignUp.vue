@@ -200,44 +200,45 @@ export default {
         }
     },
     methods: {
-      async handleForm(){
-        await axios.post(`${config.domain}/api/sign-up`, this.formData)
-            .then(response => {
-              if(response.data.success){
-                this.$swal({
-                  text : "User added  successfully",
-                  icon : "success"
-                });
-                this.formData = {
-                  prefix: "Dr.",
-                  first_name: "",
-                  middle_name: "",
-                  last_name: "",
-                  degree: "",
-                  email: "",
-                  phone: "",
-                  orchid: "",
-                  department: "",
-                  institution: "",
-                  city: "",
-                  country: "",
-                  areaOfExpertise: [],
-                  password: "",
-                  receive_reviews_request: false,
-                  join_editorial_team: false,
-                  privacy_acknowledgement: false,
-                }
-              }else{
-                this.$swal({
-                  text : response.data.message,
-                  icon : "error"
-                });
-              }
-            })
-            .catch(error => {
-              console.log(error)
-            })
-      }
+        async handleForm() {
+            await axios.post(`${config.domain}/api/sign-up`, this.formData)
+                .then(response => {
+                    if (response.data.success) {
+                        this.$swal({
+                            text: "User added  successfully",
+                            icon: "success"
+                        });
+                        this.formData = {
+                            prefix: "Dr.",
+                            first_name: "",
+                            middle_name: "",
+                            last_name: "",
+                            degree: "",
+                            email: "",
+                            phone: "",
+                            orchid: "",
+                            department: "",
+                            institution: "",
+                            city: "",
+                            country: "",
+                            areaOfExpertise: [],
+                            password: "",
+                            receive_reviews_request: false,
+                            join_editorial_team: false,
+                            privacy_acknowledgement: false,
+                        }
+                        this.$route.push({ name: 'Sign Up Success' })
+                    } else {
+                        this.$swal({
+                            text: response.data.message,
+                            icon: "error"
+                        });
+                    }
+                })
+                .catch(error => {
+                    console.log(error)
+                })
+        }
     }
 
 }

@@ -12,6 +12,7 @@ import CurrentIssueArchive from '../Pages/Journal/CurrentIssueArchive.vue'
 import IssueDetails from '../Pages/Journal/IssueDetails.vue'
 import Login from '../Pages/Auth/Login.vue'
 import SignUp from '../Pages/Auth/SignUp.vue'
+import SignUpSuccess from '../Pages/Auth/SignUpSuccess.vue'
 
 import Dashboard from '../Pages/Author/Dashboard.vue'
 import Instruction from '../Pages/Author/Instruction.vue'
@@ -29,96 +30,101 @@ const routes = [
   {
     path: '/publishing-policies',
     name: 'Publishing Policies',
-    component : PublishingPolicies
+    component: PublishingPolicies
   },
   {
     path: '/editorial-policies',
     name: 'Editorial Policies',
-    component : EditorialPolicies
+    component: EditorialPolicies
   },
   {
     path: '/news-list',
     name: 'News List',
-    component : NewsList
+    component: NewsList
   },
 
   {
     path: '/news-details/:id',
     name: 'News Details',
-    component : NewsDetails,
-    
+    component: NewsDetails,
+
   },
   {
     path: '/award-list',
     name: 'Award List',
-    component : AwardList
+    component: AwardList
   },
 
   {
     path: '/award-details/:id',
     name: 'Award Details',
-    component : AwardDetails,
-    
+    component: AwardDetails,
+
   },
   {
     path: '/policy-condition',
     name: 'Policy and Condition',
-    component : PolicyAndCondition
+    component: PolicyAndCondition
   },
   {
     path: '/journal-details/:id',
     name: 'Journal Details',
-    component : JournalDetails
+    component: JournalDetails
   },
   {
     path: '/current-issue-archive/:id',
     name: 'Current Issue Archive',
-    component : CurrentIssueArchive
+    component: CurrentIssueArchive
   },
   {
     path: '/issue-details/:id',
     name: 'Issue Details',
-    component : IssueDetails,
+    component: IssueDetails,
   },
   {
     path: '/login',
     name: 'Login',
-    component : Login,
+    component: Login,
   },
   {
     path: '/sign-up',
     name: 'Sign Up',
-    component : SignUp,
+    component: SignUp,
+  },
+  {
+    path: '/sign-up-success',
+    name: 'Sign Up success',
+    component: SignUpSuccess,
   },
   {
     path: '/author/dashboard',
     name: 'Author Dashboard',
-    component : Dashboard,
+    component: Dashboard,
   },
   {
     path: '/author/instruction',
     name: 'Author Instruction',
-    component : Instruction,
+    component: Instruction,
   },
   {
     path: '/author/submit',
     name: 'Author Submit',
-    component : Submit,
+    component: Submit,
   },
   {
     path: '/author/update-profile',
     name: 'Author Update Profile',
-    component : UpdateProfile,
+    component: UpdateProfile,
   },
   {
     path: '/author/issue-details-view/:id',
     name: 'Issue Details View',
-    component : IssueDetailsView,
+    component: IssueDetailsView,
   },
   {
     path: '/author/issue-details-edit/:id',
     name: 'Issue Details Edit',
-    component : IssueDetailsEdit,
+    component: IssueDetailsEdit,
   },
 ]
 

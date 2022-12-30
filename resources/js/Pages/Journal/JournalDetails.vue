@@ -5,61 +5,44 @@
                 <div class="col-2">
                     <img src="../../Assets/journal-cover.png" class="img-fluid" alt="">
                 </div>
-                <div class="col-8">
+                <div class="col-8" v-if="data">
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active p-3" id="general-information" role="tabpanel"
                             aria-labelledby="general-information-tab">
                             <p class="journal-details-title">General Information</p>
                             <p class="journal-details-body">
-                                <span style="white-space:pre-wrap;">This is an open access journal and double blind
-                                    peer-reviewed.<br>Sustainability Studies is a journal published annually by Aperier
-                                    publishing. Editorial cooperation with several universities around the globe is
-                                    arranged through the Department of Management. This journal is an interdisciplinary
-                                    publication which seeks to address and discuss ways of sustainabiltiy. Papers must
-                                    address issues associated with the sustainability aspects. All contributions are
-                                    refereed with the aim of providing the readership with high quality, original
-                                    material.<br><br>Type: Journal<br>ISSN: 2019-2022<br>Copyright Holder: Aperier
-                                    Publishing<br>Language: English<br>Online date, start &ndash; end: January 1,
-                                    2022&nbsp;<br>Publication Frequency: 1 Issue per Year</span>
+                            <p>{{ journalDetails.home.general_information }}</p>
+                            <span>Type: {{ journalDetails.home.type }}</span>
+                            <span>ISSN: {{ journalDetails.home.issn }}</span>
+                            <span>Copyright Holder: {{ journalDetails.home.copyright_holder }}</span>
+                            <span>Language: {{ journalDetails.home.language }}</span>
+                            <span>Online date, start &ndash; end: {{ journalDetails.home.date }}</span>
+                            <span>Publication Frequency: {{ journalDetails.home.frequency }}</span>
                             </p>
                             <div class="journal-stats my-5">
                                 <p>First decision (Median) <br>
-                                    10 days
+                                    {{ journalDetails.home.first_decision }} days
                                 </p>
                                 <p>Acceptance to publication
                                     <br>
-                                    4 days
+                                    {{ journalDetails.home.publication_acceptance }} days
                                 </p>
                                 <p>Downloads Times <br>
-                                    4,409 (2022)
+                                    {{ journalDetails.home.downloads }}
                                 </p>
                             </div>
                             <p class="journal-details-title">Aim and Scope</p>
                             <p class="journal-details-body">
-                                <span style="white-space:pre-wrap;">This &nbsp;is an international journal dedicated to
-                                    advancing the understanding of sustainability issues around the globe. In addition
-                                    to publishing original research and analyses, Sustainability Studies will publish
-                                    Comment, Reviews, Perspectives, Features and Correspondence from across the full
-                                    range of disciplines concerned with sustainability science. &nbsp;<br>Our aim is to
-                                    encourage researchers to publish their experimental, computational, and theoretical
-                                    research relating to natural and applied sciences, engineering, economics, social
-                                    sciences, and humanities in detail to promote scientific and other understanding and
-                                    to permit predictions and impact assessments of global change and development
-                                    related to sustainability.&nbsp;<br>As a problem-driven discipline, sustainability
-                                    science is concerned with addressing practical challenges caused by climate change,
-                                    habitat and biodiversity loss, and poverty among others. At the same time it tries
-                                    to investigate root causes of problems by uncovering new knowledge or combining
-                                    current knowledge from more than one discipline in a holistic way to enhance
-                                    understanding of sustainability.<br><br><strong>Key
-                                        Topics</strong><br>sustainability science is concerned with addressing practical
-                                    challenges caused by climate change, habitat and biodiversity loss, and poverty
-                                    among others;<br>Sustainable Development<br>Sustainable Development
-                                    Goals<br>Corporate Sustainability<br>Poverty<br>Corporate Environmental
-                                    Management<br>Corporate Social Responsibility<br>Climate Change, Decent
-                                    Work<br>Sustainable Production<br>Sustainable Consumption<br>Sustainable
-                                    Communities&nbsp;<br><br><strong>Readership</strong><br>Policy makers in central and
-                                    local government and NGOs &middot; decision makers in business &middot; academics
-                                    &middot; researchers &middot; scientists and engineers</span>
+                            <p>{{ journalDetails.home.aim_scope }}</p>
+                            <br><br>
+                            <strong>Key Topics</strong>
+                            <span>{{ journalDetails.home.key_topic_text }}</span>
+                            <ul>
+                                <li v-for="item in journalDetails.home.key_topics" :key="item">{{ item }}</li>
+                            </ul>
+                            <br><br>
+                            <strong>Readership</strong>
+                            <p>{{ journalDetails.home.readership }}</p>
                             </p>
                         </div>
                         <div class="tab-pane fade p-3" id="indexed" role="tabpanel" aria-labelledby="indexed-tab">
@@ -188,35 +171,36 @@
                                     <div class="journal-details-body">
                                         <span>Editor-In-Chief</span>
                                         <ul>
-                                            <li> Saleh F. Khatib</li>
+                                            <li v-for="item in journalDetails.editorial_board.in_chief" :key="item">{{
+        item
+}}
+                                            </li>
                                         </ul>
                                         <span>Editorial Board</span>
                                         <ul>
-                                            <li> Saleh F. Khatib</li>
-                                            <li> Patrizzia Garenngg</li>
-                                            <li> Rmit S. Bititcici</li>
-                                            <li> Samir Nittal</li>
-                                            <li> Miillé Terzioski</li>
+                                            <li v-for="item in journalDetails.editorial_board.in_board" :key="item">{{
+        item
+}}
+                                            </li>
                                         </ul>
-                                        <span>Managing Editor</span>
-                                        <ul>
-                                            <li> Eiln Fischeer</li>
-                                            <li> Fischeer Osep M. Lozao</li>
-                                        </ul>
+                                        <div v-if="journalDetails.editorial_board.in_managing.length > 0">
+                                            <span>Managing Editor</span>
+                                            <ul>
+                                                <li v-for="item in journalDetails.editorial_board.in_managing"
+                                                    :key="item">
+                                                    {{ item }}</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <p class="journal-details-title">Advisory Board</p>
                                     <div class="journal-details-body">
                                         <ul>
-                                            <li>Eiln Fischeer - Canada</li>
-                                            <li>Osep M. Lozao - China</li>
-                                            <li>Eiln Fischeer - Canada</li>
-                                            <li>Osep M. Lozao - China</li>
-                                            <li>Eiln Fischeer - Canada</li>
-                                            <li>Osep M. Lozao - China</li>
-                                            <li>Eiln Fischeer - Canada</li>
-                                            <li>Osep M. Lozao - China</li>
+                                            <li v-for="item in journalDetails.editorial_board.advisory" :key="item">{{
+        item
+}}
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -224,13 +208,7 @@
                             <div class="row my-5">
                                 <p class="journal-details-title">Join Our Board</p>
                                 <div class="journal-details-body">
-                                    <p>As a platform for global academic communication, the quality of journal has
-                                        always an aspect attracting much of our attention. To ensure quality of our
-                                        publication and to better serve the peers in academic circle, we now call for
-                                        reviewers among professionals and experts of the world. Professionals and
-                                        experts who meet the following requirements are encouraged to join in us and
-                                        together, we will work hard to make a world-class academic journal. To Join us,
-                                        send you up-to-date CV to the SS@aperier.com</p>
+                                    <p>{{ journalDetails.editorial_board.join_board }}</p>
                                 </div>
                             </div>
                         </div>
@@ -677,16 +655,28 @@
                             <div class="journal-details-body">
                                 <div class="contact-us-card">
                                     <Strong>Editor-In-Chief</Strong>
-                                    <p>Saleh F. A. Khatib- Malaysia <br> f1991@graduate.utm.my</p>
-                                    <br>
-                                    <Strong>Associate Editor</Strong>
-                                    <p>Osep M. Lozao - The USA <br> cgj@aperier.com</p>
+                                    <ul>
+                                        <li v-for="item in journalDetails.contact_us.in_chief" :key="item">{{
+        item
+}}
+                                        </li>
+                                    </ul>
                                     <br>
                                     <Strong>Managing Editor</Strong>
-                                    <p>Eiln Fischeer - Canada <br> cgj@aperier.com </p>
+                                    <ul>
+                                        <li v-for="item in journalDetails.contact_us.in_managing" :key="item">{{
+        item
+}}
+                                        </li>
+                                    </ul>
                                     <br>
                                     <Strong>Publisher Management </Strong>
-                                    <p>Management Office <br> head@aperier.com </p>
+                                    <ul>
+                                        <li v-for="item in journalDetails.contact_us.in_publisher" :key="item">{{
+        item
+}}
+                                        </li>
+                                    </ul>
                                     <br>
                                 </div>
                             </div>
@@ -696,24 +686,18 @@
                     <SectionTitleComponent title="Current Issue" />
                     <div class="current-issue">
                         <div class="row g-3">
-                            <JournalListCardComponent
-                                v-for="item in studyListPerJournal"
-                                :key="item.id"
-                                class="col-12"
+                            <JournalListCardComponent v-for="item in studyListPerJournal" :key="item.id" class="col-12"
                                 :title="item.title"
-                                :author="item.first_name+' '+item.middle_name+' '+item.last_name"
-                                :tag="item.name"
-                                :volume="item.volume"
-                                :issue="item.issue"
-                                :page="'pp. '+item.page"
-                                :downloads="'Downloads: '+item.downloads"
-                                :views="'Views: '+item.views"
-                                @click="this.$router.push({name: 'Issue Details', params:{id: item.id}})"
-                            />
+                                :author="item.first_name + ' ' + item.middle_name + ' ' + item.last_name"
+                                :tag="item.name" :volume="item.volume" :issue="item.issue" :page="'pp. ' + item.page"
+                                :downloads="'Downloads: ' + item.downloads" :views="'Views: ' + item.views"
+                                @click="this.$router.push({ name: 'Issue Details', params: { id: item.id } })" />
                         </div>
                         <div class="d-flex justify-content-end mt-3">
                             <span>
-                                <router-link :to="{ name: 'Current Issue Archive', params: { id: this.$route.params.id } }" target="_blank">
+                                <router-link
+                                    :to="{ name: 'Current Issue Archive', params: { id: this.$route.params.id } }"
+                                    target="_blank">
                                     More Articles
                                 </router-link>
                             </span>
@@ -769,8 +753,9 @@
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="archive-tab" data-bs-toggle="tab" data-bs-target="#archive"
                                 type="button" role="tab" aria-controls="archive" aria-selected="false">
-                                <router-link :to="{ name: 'Current Issue Archive', params: { id: this.$route.params.id } }" target="_blank"
-                                    style="text-decoration:none;color:inherit">Archive</router-link>
+                                <router-link
+                                    :to="{ name: 'Current Issue Archive', params: { id: this.$route.params.id } }"
+                                    target="_blank" style="text-decoration:none;color:inherit">Archive</router-link>
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
@@ -799,25 +784,30 @@ import axios from "axios";
 import config from "../../Data/config";
 export default {
     components: { SectionTitleComponent, JournalListCardComponent, AccordionComponent, AccordionItemComponent },
-    data(){
-        return{
-            studyListPerJournal : []
+    data() {
+        return {
+            studyListPerJournal: [],
+            journalDetails: {},
+            data: false
         }
     },
-    async mounted(){
-        await axios.get(`${config.domain}/api/studies-per-journal/`+this.$route.params.id).then(response => {
+    async mounted() {
+        await axios.get(`${config.domain}/api/studies-per-journal/` + this.$route.params.id).then(response => {
             response = response.data
-            if(response.data.length > 4){
+            if (response.data.length > 4) {
                 this.studyListPerJournal.push(response.data[0])
                 this.studyListPerJournal.push(response.data[1])
                 this.studyListPerJournal.push(response.data[2])
                 this.studyListPerJournal.push(response.data[3])
-            }else{
+            } else {
                 this.studyListPerJournal = response.data
             }
         }).catch(error => {
             console.log(error)
         })
+        let data = (await axios.get(`${config.domain}/storage/json/journal.json`)).data
+        this.journalDetails = data[`journal-${this.$route.params.id}`]
+        this.data = true
     }
 
 }

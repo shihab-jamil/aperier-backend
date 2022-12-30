@@ -12,7 +12,8 @@
               observed is built on mutual trust of the publication process participants and hope for compulsory
               observance of all the publication ethics principles, described in the "Publishing policies" and "Editorial
               policies" of the company.</p>
-            <p>We focus on the <a href="https://publicationethics.org/" target="_blank">СОРE</a>  definition, of Ethical oversight, namely &ldquo;Ethical oversight should include,
+            <p>We focus on the <a href="https://publicationethics.org/" target="_blank">СОРE</a> definition, of Ethical
+              oversight, namely &ldquo;Ethical oversight should include,
               but is not limited to, policies on consent to publication, publication on vulnerable populations, ethical
               conduct of research using animals, ethical conduct of research using human subjects, handling confidential
               data and of business/marketing practices&rdquo;. Based on this definition, the editorial staff of the
@@ -23,12 +24,16 @@
           </AccordionItemComponent>
 
           <AccordionItemComponent heading_id="headingTwo" collapse_id="collapseTwo" title="Authorship">
-            <p>We consider the author (co-author) of a research article as it is done by <a href="https://publicationethics.org/" target="_blank">Committee on Publication Ethics
-                (COPE)</a> , that is the person who is the creator or originator of an idea (e.g., the author of the theory of
+            <p>We consider the author (co-author) of a research article as it is done by <a
+                href="https://publicationethics.org/" target="_blank">Committee on Publication Ethics
+                (COPE)</a> , that is the person who is the creator or originator of an idea (e.g., the author of the
+              theory of
               relativity) or the individual or individuals who develop and bring to fruition the product that
               disseminates intellectual or creative works. The status of the article writer means that this person
               performed the research and did not infringe the copyright and other persons' rights.</p>
-            <p>Aperier follows the <a href="https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html" target="_blank">International Committee of Medical Journal Editors (ICMJE)</a>  guidelines which state
+            <p>Aperier follows the <a
+                href="https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html"
+                target="_blank">International Committee of Medical Journal Editors (ICMJE)</a> guidelines which state
               that in order to qualify for authorship of a manuscript, authors must meet all four criteria:</p>
             <ul>
               <li>Substantial contributions to the conception or design of the work; or the acquisition, analysis, or
@@ -48,11 +53,13 @@
               author list should be made during the editorial process, before manuscript acceptance. Authorship changes,
               including any addition, removal, or rearrangement of author names will require the approval of all authors
               including any to be removed. To request any change in authorship, the journal must receive a completed
-              authorship change form that includes the signatures of all authors, and provides a reason for the change.
+              <span class="text-primary" @click="downloadAuthorshipForm()">AUTHORSHIP CHANGE FORM</span> that includes
+              the signatures of all authors, and provides a reason for the change.
               Any changes to authorship requested after manuscript acceptance will result in a delay in publication. If
               the manuscript has already been published, requests for a change in authorship will be evaluated and
               require the publication of a Correction. We reserve the right to request evidence of authorship, and
-              changes to authorship after acceptance will be made at the discretion of Aperier.</p>
+              changes to authorship after acceptance will be made at the discretion of Aperier.
+            </p>
             <strong>Deceased Authors</strong>
             <p>If a manuscript is submitted with a deceased author included in the authorship, or if an author passes
               away during peer review, the corresponding author, or co-authors, should inform the editorial office. If
@@ -62,7 +69,8 @@
             <strong>Author Contributions</strong>
             <p>For complete transparency, the roles describe each author's specific contribution to the scholarly
               output. Not all roles can be used in the article and not all roles can be applied to all authors (that is,
-              each author could contribute in several roles). Please refer to CRediT taxonomy for an explanation of
+              each author could contribute in several roles). Please refer to <a href="https://credit.niso.org/"
+                target="_blank">CRediT</a> taxonomy for an explanation of
               terms.</p>
             <p>When submitting an article, the corresponding author should define the role of each author and specify
               the individuals or institutions, in the Acknowledgement, who have also contributed to the article but are
@@ -89,8 +97,12 @@
           <AccordionItemComponent heading_id="headingThree" collapse_id="collapseThree"
             title="Article Processing Charge">
             <p>Aperier publishes all its journals in full open access, meaning unlimited use and reuse of articles, in
-              addition to giving credit to the authors. All of our articles are published under a Creative Commons (CC
-              BY) license. Article processing charge (APC) is paid only after the manuscript had been reviewed and
+              addition to giving credit to the authors. All of our articles are published under a <a
+                href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+                addition to giving credit to the authors. All of our articles are published under a Creative Commons (CC
+                BY) license
+                addition to giving credit to the authors. All of our articles are published under a </a>. Article
+              processing charge (APC) is paid only after the manuscript had been reviewed and
               accepted for publication. APC covers the costs of the publishing process, including peer-review
               administration, copy editing, hosting the files, etc. APC varies for each journal and detailed information
               can be found on concrete journal&apos;s page.<br>Currently, all APCs are covered by the Aperier
@@ -114,22 +126,41 @@
               not imply endorsement by the authors or Aperier.</p>
           </AccordionItemComponent>
 
-          <AccordionItemComponent heading_id="headingFive" collapse_id="collapseFive" title="Article Withdrawal & Correction">
-              <p>We adhere to the guidelines set forth in the joint statement of the International Publishers Association (IPA) and the International Federation of Library Associations (IFLA) on the withdrawal of journal articles from the internet. These explicitly state that a publication may only be deleted from a publisher&apos;s database if it:&nbsp;</p>
-              <ul>
-                  <li>Violates professional ethical standards, such as by violating the privacy of a study subject.&nbsp;</li>
-                  <li>A legal controversy exists.&nbsp;</li>
-                  <li>Includes locating erroneous or incorrect information that, if used, poses a significant health risk. </li>
-              </ul>
-              <p>Where feasible, we keep the relevant bibliographical citation for the deleted information (unless subject to legal dispute).&nbsp;</p>
+          <AccordionItemComponent heading_id="headingFive" collapse_id="collapseFive"
+            title="Article Withdrawal & Correction">
+            <p>We adhere to the guidelines set forth in the joint statement of the International Publishers Association
+              (IPA) and the International Federation of Library Associations (IFLA) on the withdrawal of journal
+              articles from the internet. These explicitly state that a publication may only be deleted from a
+              publisher&apos;s database if it:&nbsp;</p>
+            <ul>
+              <li>Violates professional ethical standards, such as by violating the privacy of a study subject.&nbsp;
+              </li>
+              <li>A legal controversy exists.&nbsp;</li>
+              <li>Includes locating erroneous or incorrect information that, if used, poses a significant health risk.
+              </li>
+            </ul>
+            <p>Where feasible, we keep the relevant bibliographical citation for the deleted information (unless subject
+              to legal dispute).&nbsp;</p>
 
-              <span><strong>Correction Notices</strong></span>
-              <p>&nbsp;Since the version of record cannot be altered to reflect changes, such as new author affiliations or new discoveries, all published research is essentially a &quot;snapshot&quot; of a certain point in time.&nbsp;</p>
-              <p>However, we acknowledge that mistakes might occasionally occur during the stages of research, writing, and publication. We can introduce one of the following corrective messages when these problems occur.&nbsp;</p>
-              <ul>
-                  <li>Erratum: This term often refers to a manufacturing error that was discovered after publication. If an erratum is published, it will be noted in the abstract of the paper&apos;s online version as well as in the printed edition of the journal&apos;s subsequent volume or issue.&nbsp;</li>
-                  <li>Name of author corrections; Aperier is dedicated to inclusion, diversity, and equality. Aperier is putting into effect an author name change policy as part of this. For whatever reason (including religious conversion, marriage, gender identity change, or divorce), if Aperier gets a request from an author seeking to alter their name on a published piece, we will do it right away. While we won&apos;t inquire about further information or the cause for the name change, there are situations when we may need additional details (such the article reference) in order to perform the change successfully. We will try our best to change the name and, if necessary, any pronouns throughout the post.</li>
-              </ul>
+            <span><strong>Correction Notices</strong></span>
+            <p>&nbsp;Since the version of record cannot be altered to reflect changes, such as new author affiliations
+              or new discoveries, all published research is essentially a &quot;snapshot&quot; of a certain point in
+              time.&nbsp;</p>
+            <p>However, we acknowledge that mistakes might occasionally occur during the stages of research, writing,
+              and publication. We can introduce one of the following corrective messages when these problems
+              occur.&nbsp;</p>
+            <ul>
+              <li>Erratum: This term often refers to a manufacturing error that was discovered after publication. If an
+                erratum is published, it will be noted in the abstract of the paper&apos;s online version as well as in
+                the printed edition of the journal&apos;s subsequent volume or issue.&nbsp;</li>
+              <li>Name of author corrections; Aperier is dedicated to inclusion, diversity, and equality. Aperier is
+                putting into effect an author name change policy as part of this. For whatever reason (including
+                religious conversion, marriage, gender identity change, or divorce), if Aperier gets a request from an
+                author seeking to alter their name on a published piece, we will do it right away. While we won&apos;t
+                inquire about further information or the cause for the name change, there are situations when we may
+                need additional details (such the article reference) in order to perform the change successfully. We
+                will try our best to change the name and, if necessary, any pronouns throughout the post.</li>
+            </ul>
           </AccordionItemComponent>
 
           <AccordionItemComponent heading_id="headingSix" collapse_id="collapseSix" title="Citation Policies">
@@ -153,9 +184,16 @@
 <script>
 import AccordionComponent from "../Components/Accordion/AccordionComponent.vue";
 import AccordionItemComponent from "../Components/Accordion/AccordionItemComponent.vue";
+import config from "../Data/config";
 
 export default {
   components: { AccordionComponent, AccordionItemComponent },
+  methods: {
+    downloadAuthorshipForm() {
+      let url = `${config.domain}/storage/files/MANUSCRIPT SUBMISSION FORM.docx`
+      window.open(url)
+    }
+  }
 };
 </script>
 

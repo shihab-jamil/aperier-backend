@@ -5,47 +5,52 @@
         <div class="row p-5">
             <div class="col-12">
                 <div class="news-title">
-                    <span>Award Title {{ this.$route.params.id }}</span>
-                    <span>15 Nov</span>
+                    <span>{{ award.title }}</span>
+                    <span>{{ award.date }}</span>
                 </div>
                 <br><br>
-                <p>&ldquo;Business Perspectives&rdquo; issues the journals, founded by the universities and
-                    organizations, and where the company itself is a founder. At the same time the &ldquo;Editorial
-                    policies&rdquo; are equal and independent for all the journals without
-                    exception.<br><br>Journal&rsquo;s management works closely with the publisher based on clear
-                    assignment of duties and responsibility following the defined &ldquo;Publishing
-                    policies&rdquo;.<br><br>We understand &ldquo;еditorial independence&rdquo; as full freedom of
-                    journals&rsquo; editors when making decisions on whether or not to publish, as well as make
-                    corrections in the papers or withdraw them, only based on their scientific value and without
-                    intervention of the founders and the publisher of this journal, the authors and their sponsors,
-                    any other institutions and persons. Also these institutions or persons cannot affect the
-                    timelines of papers&rsquo; publication.<br><br>Not any commercial interests can be of priority
-                    over the policy of creating high-quality reviewed journals and cannot be considered in the
-                    journal.<br><br>Pursuing the independent editorial policies by the editors and members of the
-                    Editorial boards cannot be a reason for their dismissal or replacement. The journals&rsquo;
-                    editors obtain the unconditional right to publish the editorial paper with the aim to promote
-                    their voice concerning the journal&rsquo;s editorial policy as a whole and defining the opinion
-                    in every certain case to the academic circles. The publisher has no right to judge the
-                    editor&rsquo;s wish to express their opinion on this matter in mass media and on the Internet.
-                    The founders and employees of the publishing company cannot comment the decisions of
-                    journals&rsquo; Editorial boards anywhere and under any conditions.<br><br>Under any conditions,
-                    not any founder of the company &ldquo;Business Perspectives&rdquo; and its employees cannot be
-                    the editors or reviewers in the journals it publishes. Now it is established that the
-                    &ldquo;Business Perspectives&rdquo; founders cannot submit their manuscripts for publication in
-                    the journals the company publishes.<br><br>All the decisions of the Editorial boards are made
-                    independently, without any external pressure or influence, and are fully independent from the
-                    publisher and any other persons. The journals operate in compliance with the Code of Conduct for
-                    Journal Publishers.</p>
+                <p>{{ award.description }}</p>
                 <br>
-                <img src="../../Assets/man-with-books.png" alt="">
+                <strong>The Judging Process</strong>
+                <p>{{ award.judging_process }}</p>
+                <br>
+                <strong>Eligibility for the Award</strong>
+                <ul>
+                    <li v-for="item in award.eligibility" :key="item">{{ item }}</li>
+                </ul>
+                <br>
+                <strong>Award Winning Criteria</strong>
+                <ul>
+                    <li v-for="item in award.criteria" :key="item">{{ item }}</li>
+                </ul>
+                <br>
+                <p>{{ award.criteria_text }}</p>
+                <br>
+                <strong>The Prize </strong>
+                <ul>
+                    <li v-for="item in award.prize" :key="item">{{ item }}</li>
+                </ul>
+                <br><br>
+                <img src="../../Assets/Trophy.png" alt="">
             </div>
         </div>
     </div>
 </template>
 
 <script>
-export default {
+import axios from 'axios';
+import config from "@/Data/config";
 
+export default {
+    data() {
+        return {
+            award: {}
+        }
+    },
+    async mounted() {
+        let data = (await axios.get(`${config.domain}/storage/json/award.json`)).data
+        this.award = data[`award-${this.$route.params.id}`]
+    }
 }
 </script>
 

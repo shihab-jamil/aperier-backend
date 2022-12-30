@@ -1,6 +1,6 @@
 <template>
     <div class="news-card">
-        <img :src="src" alt="">
+        <img src="../../Assets/Trophy.png" alt="">
         <div class="news-card-body">
             <div class="news-title">
                 <span>{{ title }}</span>
@@ -16,7 +16,7 @@
 
 <script>
 export default {
-    props: ["src", "title", "date", "id"]
+    props: ["src", "title", "date", "id"],
 }
 </script>
 

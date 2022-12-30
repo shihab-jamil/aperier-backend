@@ -5,34 +5,28 @@
     <section-title-component title="All Awards" class="mt-3" />
     <div class="container p-5">
         <div class="row g-4">
-            <div class="col-12">
-                <AwardListCardComponent src="../src/Assets/man-with-books.png" title="Award 1" date="25 Nov" id="1" />
-            </div>
-            <div class="col-12">
-                <AwardListCardComponent src="../src/Assets/man-with-books.png" title="Award 2" date="25 Nov" id="2" />
-            </div>
-            <div class="col-12">
-                <AwardListCardComponent src="../src/Assets/man-with-books.png" title="Award 3" date="25 Nov" id="3" />
-            </div>
-            <div class="col-12">
-                <AwardListCardComponent src="../src/Assets/man-with-books.png" title="Award 4" date="25 Nov" id="4" />
-            </div>
-            <div class="col-12">
-                <AwardListCardComponent src="../src/Assets/man-with-books.png" title="Award 5" date="25 Nov" id="5" />
-            </div>
-            <div class="col-12">
-                <AwardListCardComponent src="../src/Assets/man-with-books.png" title="Award 6" date="25 Nov" id="6" />
+            <div class="col-12" v-for="item in awardList" :key="item.id">
+                <AwardListCardComponent :title="item.title" :date="item.date" :id="item.id" />
             </div>
         </div>
     </div>
 </template>
 
 <script>
+import axios from 'axios';
 import AwardListCardComponent from '../../Components/Award/AwardListCardComponent.vue';
 import SectionTitleComponent from '../../Components/SectionTitleComponent.vue';
-
+import config from "@/Data/config";
 export default {
-    components: { AwardListCardComponent, SectionTitleComponent }
+    components: { AwardListCardComponent, SectionTitleComponent },
+    data() {
+        return {
+            awardList: {}
+        }
+    },
+    async mounted() {
+        this.awardList = (await axios.get(`${config.domain}/storage/json/award.json`)).data
+    }
 }
 </script>
 
