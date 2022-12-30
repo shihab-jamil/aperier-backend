@@ -782,6 +782,7 @@ import JournalListCardComponent from '../../Components/Journal/JournalListCardCo
 import SectionTitleComponent from '../../Components/SectionTitleComponent.vue'
 import axios from "axios";
 import config from "../../Data/config";
+import journal from "@/Data/journal";
 export default {
     components: { SectionTitleComponent, JournalListCardComponent, AccordionComponent, AccordionItemComponent },
     data() {
@@ -805,8 +806,7 @@ export default {
         }).catch(error => {
             console.log(error)
         })
-        let data = (await axios.get(`${config.domain}/storage/json/journal.json`)).data
-        this.journalDetails = data[`journal-${this.$route.params.id}`]
+        this.journalDetails = journal[`journal-${this.$route.params.id}`]
         this.data = true
     }
 

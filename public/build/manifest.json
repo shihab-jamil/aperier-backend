@@ -27,21 +27,21 @@
     "file": "assets/news_3.54e084b0.png",
     "src": "resources/js/Assets/news_3.png"
   },
-  "resources/js/Assets/journal_2.png": {
-    "file": "assets/journal_2.f21901c5.png",
-    "src": "resources/js/Assets/journal_2.png"
-  },
   "resources/js/Assets/journal_1.png": {
     "file": "assets/journal_1.0e107a9d.png",
     "src": "resources/js/Assets/journal_1.png"
   },
-  "resources/js/Assets/journal_4.png": {
-    "file": "assets/journal_4.11861d88.png",
-    "src": "resources/js/Assets/journal_4.png"
+  "resources/js/Assets/journal_2.png": {
+    "file": "assets/journal_2.f21901c5.png",
+    "src": "resources/js/Assets/journal_2.png"
   },
   "resources/js/Assets/journal_3.png": {
     "file": "assets/journal_3.7dcfd42a.png",
     "src": "resources/js/Assets/journal_3.png"
+  },
+  "resources/js/Assets/journal_4.png": {
+    "file": "assets/journal_4.11861d88.png",
+    "src": "resources/js/Assets/journal_4.png"
   },
   "resources/js/Assets/journal_5.png": {
     "file": "assets/journal_5.37879ff9.png",
@@ -69,11 +69,11 @@
     "isEntry": true
   },
   "resources/js/main.js": {
-    "file": "assets/main.5148eda0.js",
+    "file": "assets/main.0e2a3d5f.js",
     "src": "resources/js/main.js",
     "isEntry": true,
     "css": [
-      "assets/main.7fd587f0.css"
+      "assets/main.7ecaa914.css"
     ],
     "assets": [
       "assets/logo.ca67b92a.svg",
@@ -95,7 +95,7 @@
     ]
   },
   "resources/js/main.css": {
-    "file": "assets/main.7fd587f0.css",
+    "file": "assets/main.7ecaa914.css",
     "src": "resources/js/main.css"
   }
 }

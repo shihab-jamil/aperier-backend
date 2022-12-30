@@ -13,10 +13,9 @@
 </template>
 
 <script>
-import axios from 'axios';
 import AwardListCardComponent from '../../Components/Award/AwardListCardComponent.vue';
 import SectionTitleComponent from '../../Components/SectionTitleComponent.vue';
-import config from "@/Data/config";
+import award from "@/Data/award";
 export default {
     components: { AwardListCardComponent, SectionTitleComponent },
     data() {
@@ -25,7 +24,7 @@ export default {
         }
     },
     async mounted() {
-        this.awardList = (await axios.get(`${config.domain}/storage/json/award.json`)).data
+        this.awardList = award
     }
 }
 </script>

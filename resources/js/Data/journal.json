@@ -1,0 +1,386 @@
+{
+    "journal-1":{
+        "home" : {
+            "general_information" : "This is an open access journal and peer-reviewed.Sustainability Studies is a journal published annually by Aperier publishing. Editorial cooperation with several universities around the globe is arranged through the Department of Management. This journal is an interdisciplinary publication which seeks to address and discuss ways of sustainabiltiy. Papers must address issues associated with the sustainability aspects. All contributions are refereed with the aim of providing the readership with high quality, original material.",
+            "type" : "Journal",
+            "issn" : "2019-2022",
+            "copyright_holder" : "Aperier Publishing",
+            "language" : "English",
+            "date" : "January 1, 2022",
+            "frequency" : "1 Issue per Year",
+            "first_decision" : "10",
+            "publication_acceptance" : "4",
+            "downloads" : "4,409 (2022)",
+            "aim_scope" : "This is an international journal dedicated to advancing the understanding of sustainability issues around the globe. In addition to publishing original research and analyses, Sustainability Studies will publish Comment, Reviews, Perspectives, Features and Correspondence from across the full range of disciplines concerned with sustainability science. Our aim is to encourage researchers to publish their experimental, computational, and theoretical research relating to natural and applied sciences, engineering, economics, social sciences, and humanities in detail to promote scientific and other understanding and to permit predictions and impact assessments of global change and development related to sustainability. As a problem-driven discipline, sustainability science is concerned with addressing practical challenges caused by climate change, habitat and biodiversity loss, and poverty among others. At the same time it tries to investigate root causes of problems by uncovering new knowledge or combining current knowledge from more than one discipline in a holistic way to enhance understanding of sustainability.",
+            "key_topic_text" : "sustainability science is concerned with addressing practical challenges caused by climate change, habitat and biodiversity loss, and poverty among others;",
+            "key_topics" : [
+                "Sustainable Development",
+                "Sustainable Development Goals",
+                "Corporate Sustainability",
+                "Poverty",
+                "Corporate Environmental Management",
+                "Corporate Social Responsibility",
+                "Climate Change, Decent Work",
+                "Sustainable Production",
+                "Sustainable Consumption",
+                "Sustainable Communities "
+            ],
+            "readership" : "Policy makers in central and local government and NGOs · decision makers in business · academics · researchers · scientists and engineers"
+        },
+        "editorial_board":{
+            "in_chief" : [
+                "Saleh F. A. Khatib"
+            ],
+            "in_board":[
+                "Mohammad Amin Makarem",
+                "Sukanya Chakraborty",
+                "Youssef Said Bazeen",
+                "Annisa Dina Amalia",
+                "Claire Xin Hui Su"
+            ],
+            "in_managing" : [
+                "Fatin Izzati Jaidil"
+            ],
+            "advisory" : [
+                "Coming soon..."
+            ],
+            "join_board":"As a platform for global academic communication, the quality of journal has always an aspect attracting much of our attention. To ensure quality of our publication and to better serve the peers in academic circle, we now call for reviewers among professionals and experts of the world. Professionals and experts who meet the following requirements are encouraged to join in us and together, we will work hard to make a world-class academic journal. To Join us, send you up-to-date CV to the SS@aperier.com"
+        },
+        "contact_us" : {
+            "in_chief" : [
+                "Saleh F. A. Khatib- Malaysia",
+                "f1991@graduate.utm.my"
+            ],
+            "in_managing":[
+                "ss@aperier.com"
+            ],
+            "in_publisher" : [
+                "Management Office",
+                "head@aperier.com"
+            ]
+        }
+    },
+    "journal-2":{
+        "home" : {
+            "general_information" : "This is an open access journal and double blind peer-reviewed.Sustainability Studies is a journal published annually by Aperier publishing. Editorial cooperation with several universities around the globe is arranged through the Department of Management. This journal is an interdisciplinary publication which seeks to address and discuss ways of sustainabiltiy. Papers must address issues associated with the sustainability aspects. All contributions are refereed with the aim of providing the readership with high quality, original material.",
+            "type" : "Journal",
+            "issn" : "2020-2022",
+            "copyright_holder" : "Aperier Publishing",
+            "language" : "English",
+            "date" : "January 1, 2022",
+            "frequency" : "1 Issue per Year",
+            "first_decision" : "12",
+            "publication_acceptance" : "5",
+            "downloads" : "3,102 (2022)",
+            "aim_scope" : "This is an international journal dedicated to advancing the understanding of business issues around the globe. In addition to publishing original research and analyses, Business Studies will publish Comment, Reviews, Perspectives, Features and Correspondence from across the full range of disciplines concerned with business science. Our aim is to encourage researchers to publish their experimental, computational, and theoretical research relating to business administration and cross-functional, multidisciplinary research that reflects the complex character of business problems. Of particular interest are articles devoted to developing novel perspectives or exploring new domains of research. This journal is not tied to any particular subfield, type of analysis, or national context.It tries to investigate root causes of problems by uncovering new knowledge or combining current knowledge from more than one discipline in a holistic way to enhance understanding of business.",
+            "key_topic_text" : "Business science is concerned with addressing practical challenges caused by several issues, among others;",
+            "key_topics" : [
+                "Global Political and Economic Environment",
+                "Strategic Management",
+                "Finance and Accounting",
+                "Industrial Marketing",
+                "Organizational Behavior",
+                "Cross-Cultural Management",
+                "Leadership",
+                "Human Resources Management",
+                "Ethics, Social Responsibility and Sustainability",
+                "Innovation, Technology and Entrepreneurship",
+                "Business Law",
+                "Business History"
+            ],
+            "readership" : "Policy makers in central and local government · decision makers in business · academics · researchers · scientists and engineers"
+        },
+        "editorial_board":{
+            "in_chief" : [
+                "Ali Shariff Kabara"
+            ],
+            "in_board":[
+                "Mohammad Sidik Nugraha" ,
+                "Amira Diyana Mohd Rosly"
+            ],
+            "in_managing" : [
+                
+            ],
+            "advisory" : [
+                "Coming soon..."
+            ],
+            "join_board":"As a platform for global academic communication, the quality of journal has always an aspect attracting much of our attention. To ensure quality of our publication and to better serve the peers in academic circle, we now call for reviewers among professionals and experts of the world. Professionals and experts who meet the following requirements are encouraged to join in us and together, we will work hard to make a world-class academic journal. To Join us, send you up-to-date CV to the BS@aperier.com"
+        },
+        "contact_us" : {
+            "in_chief" : [
+                "Ali Shariff Kabara",
+                "alishariff080@gmail.com"
+                
+            ],
+            "in_managing":[
+                "bs@aperier.com"
+            ],
+            "in_publisher" : [
+                "Management Office",
+                "head@aperier.com"
+            ]
+        }
+    },
+    "journal-3":{
+        "home" : {
+            "general_information" : "This is an open access journal and double blind peer-reviewed.Bibliometric and Systematic Reviews is a journal published annually by Aperier publishing. Editorial cooperation with several universities around the globe is arranged through the Department of Management. This journal is an interdisciplinary publication which seeks to address and discuss ways of various topics. All contributions are refereed with the aim of providing the readership with high quality, original material.",
+            "type" : "Journal",
+            "issn" : "2018-2022",
+            "copyright_holder" : "Aperier Publishing",
+            "language" : "English",
+            "date" : "January 1, 2022",
+            "frequency" : "1 Issue per Year",
+            "first_decision" : "10",
+            "publication_acceptance" : "4",
+            "downloads" : "4,409 (2022)",
+            "aim_scope" : "This is an international journal dedicated to advancing the understanding of sustainability issues around the globe. In addition to publishing original research and analyses, Sustainability Studies will publish Comment, Reviews, Perspectives, Features and Correspondence from across the full range of disciplines concerned with scientific research.Our aim is to encourage researchers to publish their reviews that encompasses all aspects of the design, conduct and reporting of systematic reviews. The journal publishes high quality review products including systematic review protocols, systematic reviews related to a very broad definition of social and applied sciences, rapid reviews, updates of already completed systematic reviews, and methods research related to the science of systematic reviews, such as decision modelling. The journal also aims to ensure that the results of all well-conducted systematic reviews are published, regardless of their outcome.The journal aimed to facilitate the research in all fields of life until the systematic methods have been applied.",
+            "key_topic_text" : "This journal has a growing list of editorial topic areas, including: ",
+            "key_topics" : [
+                "Business and Management",
+                "Climate Solutions",
+                "Crime and Justice",
+                "Disability",
+                "Education; ",
+                "International Development",
+                "Knowledge Translation and Implementation",
+                "Methods",
+                "Nutrition and Food Security",
+                "Sexual Orientation and Gender Identity",
+                "Social Welfare",
+                "Training",
+                "Sustainable Development Goals",
+                "Sustainability"
+            ],
+            "readership" : "Policy makers in central and local government and NGOs · decision makers in business · academics · researchers · scientists and engineers"
+        },
+        "editorial_board":{
+            "in_chief" : [
+                "Alhamzah F. Abbas"
+            ],
+            "in_board":[
+                "Adam Adiyatma",
+                "Desy Trilistyoati",
+                "Muhammad Andhika",
+                "Thirumagal Jayaraman",
+                "Ejaz Ahmed Chaudhary"
+            ],
+            "in_managing" : [
+
+            ],
+            "advisory" : [
+                "Coming soon..."
+            ],
+            "join_board":"As a platform for global academic communication, the quality of journal has always an aspect attracting much of our attention. To ensure quality of our publication and to better serve the peers in academic circle, we now call for reviewers among professionals and experts of the world. Professionals and experts who meet the following requirements are encouraged to join in us and together, we will work hard to make a world-class academic journal. To Join us, send you up-to-date CV to the SBR@aperier.com"
+        },
+        "contact_us" : {
+            "in_chief" : [
+                "Alhamzah F. Abbas",
+                "alhamza.fadil@gmail.com"
+            ],
+            "in_managing":[
+                "bsr@aperier.com"
+            ],
+            "in_publisher" : [
+                "Management Office",
+                "head@aperier.com"
+            ]
+        }
+    },
+    "journal-4":{
+        "home" : {
+            "general_information" : "This is an open access journal and double blind peer-reviewed.Marketing Studies is a journal published annually by Aperier publishing. Editorial cooperation with several universities around the globe is arranged through the Department of Management. This journal is an interdisciplinary publication which seeks to address and discuss ways of marketing. Papers must address issues associated with the marketing aspects. All contributions are refereed with the aim of providing the readership with high quality, original material.",
+            "type" : "Journal",
+            "issn" : "2018-2022",
+            "copyright_holder" : "Aperier Publishing",
+            "language" : "English",
+            "date" : "January 1, 2022",
+            "frequency" : "1 Issue per Year",
+            "first_decision" : "7",
+            "publication_acceptance" : "6",
+            "downloads" : "1,421     (2022)",
+            "aim_scope" : "This is an international journal dedicated to advancing the understanding of marketing issues around the globe. In addition to publishing original research and analyses, Marketing Studies will publish Comment, Reviews, Perspectives, Features and Correspondence from across the full range of disciplines concerned with Marketing science. Our aim is to encourage researchers to publish their experimental, computational, and theoretical research relating to natural and applied sciences, engineering, economics, social sciences, and humanities in detail to promote scientific and other understanding and to permit predictions and impact assessments of global change and development related to marketing. As a problem-driven discipline, marketing science is concerned with addressing practical challenges caused over time. At the same time it tries to investigate root causes of problems by uncovering new knowledge or combining current knowledge from more than one discipline in a holistic way to enhance understanding of marketing.",
+            "key_topic_text" : "Marketing Studies is concerned with addressing practical challenges caused in the marketing field including;",
+            "key_topics" : [
+                "Consumption and Consumer Behavior, ",
+                "Communication, ",
+                "International Marketing",
+                "Retailing, ",
+                "Trade Marketing, ",
+                "Business-to-Business Marketing, ",
+                "Market and Marketing Research, ",
+                "Pricing, ",
+                "New Product Development and more. "
+            ],
+            "readership" : "Policy makers in central and local government and NGOs · decision makers in business · academics · researchers · scientists and engineers"
+        },
+        "editorial_board":{
+            "in_chief" : [
+                "Kaukab Abid Azhar"
+            ],
+            "in_board":[
+                "Suzana Ruslan",
+                "Alhamzah F. Abbas"
+            ],
+            "in_managing" : [
+                
+            ],
+            "advisory" : [
+                "Coming soon..."
+            ],
+            "join_board":"As a platform for global academic communication, the quality of journal has always an aspect attracting much of our attention. To ensure quality of our publication and to better serve the peers in academic circle, we now call for reviewers among professionals and experts of the world. Professionals and experts who meet the following requirements are encouraged to join in us and together, we will work hard to make a world-class academic journal. To Join us, send you up-to-date CV to the SS@aperier.com"
+        },
+        "contact_us" : {
+            "in_chief" : [
+                "Kaukab Abid Azhar",
+                "kaukababidazhar@gmail.com"
+                
+            ],
+            "in_managing":[
+                "ms@aperier.com"
+            ],
+            "in_publisher" : [
+                "Management Office",
+                "head@aperier.com"
+            ]
+        }
+    },
+    "journal-5":{
+        "home" : {
+            "general_information" : "This is an open access journal and double blind peer-reviewed.Finance Studies is a journal published annually by Aperier publishing. Editorial cooperation with several universities around the globe is arranged through the Department of Management. This journal is an interdisciplinary publication which seeks to address and discuss ways of finance. Papers must address issues associated with the financial aspects. All contributions are refereed with the aim of providing the readership with high quality, original material.",
+            "type" : "Journal",
+            "issn" : "2018-2022",
+            "copyright_holder" : "Aperier Publishing",
+            "language" : "English",
+            "date" : "January 1, 2022",
+            "frequency" : "1 Issue per Year",
+            "first_decision" : "8",
+            "publication_acceptance" : "4",
+            "downloads" : "2,000 (2022)",
+            "aim_scope" : "This is an international journal dedicated to advancing the understanding of finance issues around the globe. In addition to publishing original research and analyses, Finance Studies will publish Comment, Reviews, Perspectives, Features and Correspondence from across the full range of disciplines concerned with finance science. Our aim is to encourage researchers to publish their experimental, computational, and theoretical research relating to natural and applied sciences, engineering, economics, social sciences, and humanities in detail to promote scientific and other understanding and to permit predictions and impact assessments of global change and development related to finance. ",
+            "key_topic_text" : "sustainability science is concerned with addressing practical challenges caused by climate change, habitat and biodiversity loss, and poverty among others;",
+            "key_topics" : [
+                "Finance science is concerned with addressing practical challenges related t",
+                "Asset Management",
+                "Asset Pricing; Banking (Efficiency, Regulation, Risk Management, Solvency)",
+                "Behavioural Finance",
+                "Capital Structure; Corporate Finance; Corporate Governance",
+                "Derivative Pricing and Hedging",
+                "Distribution Forecasting with Financial Applications",
+                "Entrepreneurial Finance",
+                "Empirical Finance",
+                "Financial Economics",
+                "Financial Markets (Alternative, Bonds, Currency, Commodity, Derivatives, Equity, Energy, Real Estate)",
+                "FinTech",
+                "Fund Management",
+                "General Equilibrium Models",
+                "High-Frequency Trading",
+                "Intermediation",
+                "International Finance",
+                "Hedge Funds",
+                "Investments",
+                "Liquidity",
+                "Market Efficiency",
+                "Market Microstructure",
+                "Mergers and Acquisitions",
+                "Networks",
+                "Performance Analysis",
+                "Political Risk",
+                "Portfolio Optimization",
+                "Regulation of Financial Markets and Institutions",
+                "Risk Management and Analysis",
+                "Systemic Risk",
+                "Term Structure Models",
+                "Venture Capita"
+            ],
+            "readership" : "Policy makers in central and local government and NGOs · decision makers in business · academics · researchers · scientists and engineers"
+        },
+        "editorial_board":{
+            "in_chief" : [
+                "Yasean Tahat"
+            ],
+            "in_board":[
+                "Swati Gupta",
+                "Prihantini Prihantini"
+            ],
+            "in_managing" : [
+                
+            ],
+            "advisory" : [
+                "Coming soon..."
+            ],
+            "join_board":"As a platform for global academic communication, the quality of journal has always an aspect attracting much of our attention. To ensure quality of our publication and to better serve the peers in academic circle, we now call for reviewers among professionals and experts of the world. Professionals and experts who meet the following requirements are encouraged to join in us and together, we will work hard to make a world-class academic journal. To Join us, send you up-to-date CV to the fS@aperier.com"
+        },
+        "contact_us" : {
+            "in_chief" : [
+                "Yasean Tahat",
+                "tahat.y@gust.edu.kw"
+            ],
+            "in_managing":[
+                "fs@aperier.com"
+            ],
+            "in_publisher" : [
+                "Management Office",
+                "head@aperier.com"
+            ]
+        }
+    },
+    "journal-6":{
+        "home" : {
+            "general_information" : "This is an open access journal and double blind peer-reviewed.Tourism Studies is a journal published annually by Aperier publishing. Editorial cooperation with several universities around the globe is arranged through the Department of Management. This journal is an interdisciplinary publication which seeks to address and discuss ways of tourism. Papers must address issues associated with the tourism aspects. All contributions are refereed with the aim of providing the readership with high quality, original material.",
+            "type" : "Journal",
+            "issn" : "2018-2022",
+            "copyright_holder" : "Aperier Publishing",
+            "language" : "English",
+            "date" : "January 1, 2022",
+            "frequency" : "1 Issue per Year",
+            "first_decision" : "10",
+            "publication_acceptance" : "4",
+            "downloads" : "4,409 (2022)",
+            "aim_scope" : "This is an international journal dedicated to advancing the understanding of tourism issues around the globe. In addition to publishing original research and analyses, Tourism Studies will publish Comment, Reviews, Perspectives, Features and Correspondence from across the full range of disciplines concerned with tourism science. Our aim is to encourage researchers to publish their experimental, computational, and theoretical research relating to natural and applied sciences, engineering, economics, social sciences, and humanities in detail to promote scientific and other understanding and to permit predictions and impact assessments of global change and development related to tourism.  Its aim is to provide a platform for discussion of theoretical and empirical problems in tourism. Publications from all fields, connected with tourism such as tourism management, tourism marketing, tourism sociology, psychology in tourism, tourism geography, political sciences in tourism, mathematics, tourism statistics, tourism anthropology, culture and tourism, heritage and tourism, national identity and tourism, information technologies in tourism and others are invited.",
+            "key_topic_text" : "sustainability science is concerned with addressing practical challenges caused by climate change, habitat and biodiversity loss, and poverty among others;",
+            "key_topics" : [
+                "Branding and brand management",
+                "Participatory, e-commerce, and sharing business models",
+                "Operations management",
+                "Training and staff development",
+                "Networking, partnerships, and collaboration",
+                "Gender and identity",
+                "Change management",
+                "Product and service innovation",
+                "Service, delivery, quality, and recovery",
+                "Social media marketing and management",
+                "Risk, safety, security, and crisis management",
+                "Customer motivations, satisfaction, and intentions"
+            ],
+            "readership" : "Policy makers in central and local government and NGOs · decision makers in business · academics · researchers · scientists and engineers"
+        },
+        "editorial_board":{
+            "in_chief" : [
+                "Ibrahim Suleiman Yahaya"
+            ],
+            "in_board":[
+                "Abdul Muhaimin Misran",
+                "Saleh F. A. Khatib"
+            ],
+            "in_managing" : [
+            ],
+            "advisory" : [
+                "Coming soon..."
+            ],
+            "join_board":"As a platform for global academic communication, the quality of journal has always an aspect attracting much of our attention. To ensure quality of our publication and to better serve the peers in academic circle, we now call for reviewers among professionals and experts of the world. Professionals and experts who meet the following requirements are encouraged to join in us and together, we will work hard to make a world-class academic journal. To Join us, send you up-to-date CV to the TS@aperier.com"
+        },
+        "contact_us" : {
+            "in_chief" : [
+                "Ibrahim Suleiman Yahaya",
+                "iysuleiman@gmail.com"
+            ],
+            "in_managing":[
+                "ts@aperier.com"
+            ],
+            "in_publisher" : [
+                "Management Office",
+                "head@aperier.com"
+            ]
+        }
+    }
+}

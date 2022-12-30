@@ -1,0 +1,150 @@
+{
+    "award-1":{
+        "id" : 1,
+        "title" : "Outstanding Article Award – Sustainability Studies - 2024",
+        "date" : "Dec 01, 2022",
+        "description" : "The Outstanding Paper Awards is introduced by Aperier publishing for publications that have a clear and important contribution to the field of sustainability. The winners are chosen by the journal editorial team giving the winning authors confidence in knowing that their paper was one of the most impressive pieces of work from the previous years.The Outstanding Articles Award seeks to honour and encourage superior contributions to academic writing and research among academics and students who have submitted complete papers and will speak at Aperier publisher. This Award is open to all fully published papers, independent of the initial authors' positions (e.g., academic, professional, educator, policymaker, etc.).",
+        "judging_process" : "Editors of Sustainability studies create a separate advisory committee to determine and select the article(s) from the prior year as the \" Outstanding Articles.\" The winner will be selected on this basis. Some publications feature other awards as well.",
+        "eligibility" : [
+            "Open to all career levels",
+            "All published Articles in Sustainability Studies will be considered."
+        ],
+        "criteria" : [
+            "Research creates impact and generates real change beyond academia",
+            "Contribution of something new to the body of knowledge either in terms of approach or subject matter",
+            "Excellent structure and presentation",
+            "Well-written",
+            "Rigour in terms of argument or analysis",
+            "Relevance – to practice and further research, in most cases",
+            "Up-to-date – demonstrating that the latest/key works in the field have been cited"
+        ],
+        "criteria_text" : "Ultimately, an outstanding paper will be promoted by the publisher, which would make it stand out from the rest.",
+        "prize" : [
+            "The winning paper: $500 ",
+            "The winners will also receive a certificate."
+        ]
+    },
+    "award-2":{
+        "id" : 2,
+        "title" : "Travel Award – All Aperier Journals - 2024",
+        "date" : "Dec 01, 2022",
+        "description" : "The Travel Awards is introduced by Aperier publishing for authors who published with us, especially researchers in early stage of their academic career that have made a clear and important contribution to their field. The winners are chosen by the independent committee from all journal editorial boards will select the winners; giving the winning authors confidence in knowing that their outstanding progress and chance to broaden their network with the international research communities, as this award provides financial support for the winners to attend an international conference in the relevant field, in order to hold a presentation, present a poster, or both.",
+        "judging_process" : "independent committee from all journal editorial boards will be created to determine and select the winning authors who published their work at one of Aperier journals, especially Postdoctoral fellows or PhD students. The winner will be selected on this basis.",
+        "eligibility" : [
+            "Open to all career levels; especially Postdoctoral fellows or PhD students.",
+            "Plans to attend an international conference."
+        ],
+        "criteria" : [
+            "Provided information of the conference that the applicant is planning to attend and the abstract that will be submitted.",
+            "Curriculum vitae and list of publications.",
+            "Justification letter describing the focus of the research (max. 800 words).",
+            "Letter of recommendation from the supervisor, research director, or department head, which also confirms the applicant’s status as a postdoctoral fellow/PhD student.",
+            "His/her Social media links (for promotions purpose only)"
+        ],
+        "criteria_text" : "Ultimately, an outstanding paper will be promoted by the publisher, which would make it stand out from the rest.",
+        "prize" : [
+            "Three winners: Plans to attend an international conference",
+            "Up to up to $1,000 each awardee",
+            "The winners will also receive a certificate."
+        ]
+    },
+    "award-3":{
+        "id" : 3,
+        "title" : "Travel Award –Outstanding Article Award – Business Studies - 2024",
+        "date" : "Dec 01, 2022",
+        "description" : "The Outstanding Paper Awards is introduced by Aperier publishing for publications that have a clear and important contribution to various field of business and management. The winners are chosen by the journal editorial team giving the winning authors confidence in knowing that their paper was one of the most impressive pieces of work from the previous years.The Outstanding Articles Award seeks to honour and encourage superior contributions to academic writing and research among academics and students who have submitted complete papers and will speak at Aperier publisher. This Award is open to all fully published papers, independent of the initial authors' positions (e.g., academic, professional, educator, policymaker, etc.).",
+        "judging_process" : "iEditors of Business studies create a separate advisory committee to determine and select the article(s) from the prior year as the \" Outstanding Articles.\" The winner will be selected on this basis. Some publications feature other awards as well.",
+        "eligibility" : [
+            "Open to all career levels;",
+            "All published Articles in Sustainability Studies will be considered."
+        ],
+        "criteria" : [
+            "Research creates impact and generates real change beyond academia",
+            "Contribution of something new to the body of knowledge either in terms of approach or subject matter",
+            "Excellent structure and presentation",
+            "Well-written",
+            "Rigour in terms of argument or analysis",
+            "Relevance – to practice and further research, in most cases",
+            "Up-to-date – demonstrating that the latest/key works in the field have been cited"
+        ],
+        "criteria_text" : "Ultimately, an outstanding paper will be promoted by the publisher, which would make it stand out from the rest.",
+        "prize" : [
+            "The winning paper: $500 ",
+            "The winners will also receive a certificate."
+        ]
+    },
+    "award-4":{
+        "id" : 4,
+        "title" : "Outstanding Reviewer Awards- All Journals - 2024",
+        "date" : "Dec 01, 2022",
+        "description" : "Reviewers are essential to the scholarly publishing process; academics rely on peer review to verify their research and add value to it through critical engagement before publication.Reviewers are specialists in a given area of research and are well placed to assess the soundness of an author’s work and share their own knowledge.",
+        "judging_process" : "The editorial Board the journals select a winner of the ‘Outstanding Reviewer Award’ from the previous year’s volume.",
+        "eligibility" : [
+            "Open to all career levels;",
+            "All published Articles in Sustainability Studies will be considered."
+        ],
+        "criteria" : [
+            "Timeliness of the reviews",
+            "Quality of the reviews",
+            "The depth of reviews and the amount of detail"
+        ],
+        "criteria_text" : "Ultimately, an outstanding paper will be promoted by the publisher, which would make it stand out from the rest.",
+        "prize" : [
+            "There will be three winners this year, and each will receive the following: ",
+            "Up to $300 ",
+            "A certificate."
+        ]
+    },
+    "award-5":{
+        "id" : 5,
+        "title" : "Travel Award –Outstanding Article Award – Bibliometric and Systematic Reviews  - 2024",
+        "date" : "Dec 01, 2022",
+        "description" : "The Outstanding Paper Awards is introduced by Aperier publishing for Reviews that have a clear and important contribution to field. The winners are chosen by the journal editorial team giving the winning authors confidence in knowing that their paper was one of the most impressive pieces of work from the previous years.The Outstanding Articles Award seeks to honour and encourage superior contributions to academic writing and research among academics and students who have submitted complete papers and will speak at Aperier publisher. This Award is open to all fully published papers, independent of the initial authors' positions (e.g., academic, professional, educator, policymaker, etc.).",
+        "judging_process" : "Editors of Bibliometric and Systematic Reviews create a separate advisory committee to determine and select the article(s) from the prior year as the \" Outstanding Articles.\" The winner will be selected on this basis. Some publications feature other awards as well.",
+        "eligibility" : [
+            "Open to all career levels;",
+            "All published Articles in Sustainability Studies will be considered."
+        ],
+        "criteria" : [
+            "Research creates impact and generates real change beyond academia",
+            "Contribution of something new to the body of knowledge either in terms of approach or subject matter",
+            "Excellent structure and presentation",
+            "Well-written",
+            "Rigour in terms of argument or analysis",
+            "Relevance – to practice and further research, in most cases",
+            "Up-to-date – demonstrating that the latest/key works in the field have been cited"
+        ],
+        "criteria_text" : "Ultimately, an outstanding paper will be promoted by the publisher, which would make it stand out from the rest.",
+        "prize" : [
+            "The winning paper: $500 ",
+            "The winners will also receive a certificate."
+        ]
+    },
+    "award-6":{
+        "id" : 6,
+        "title" : "Travel Award –Outstanding Article Award – Tourism Studies - 2024",
+        "date" : "Dec 01, 2022",
+        "description" : "The Outstanding Paper Awards is introduced by Aperier publishing for Reviews that have a clear and important contribution to field. The winners are chosen by the journal editorial team giving the winning authors confidence in knowing that their paper was one of the most impressive pieces of work from the previous years.The Outstanding Articles Award seeks to honour and encourage superior contributions to academic writing and research among academics and students who have submitted complete papers and will speak at Aperier publisher. This Award is open to all fully published papers, independent of the initial authors' positions (e.g., academic, professional, educator, policymaker, etc.).",
+        "judging_process" : "Editors of Bibliometric and Systematic Reviews create a separate advisory committee to determine and select the article(s) from the prior year as the \" Outstanding Articles.\" The winner will be selected on this basis. Some publications feature other awards as well.",
+        "eligibility" : [
+            "Open to all career levels;",
+            "All published Articles in Sustainability Studies will be considered."
+        ],
+        "criteria" : [
+            "Research creates impact and generates real change beyond academia",
+            "Contribution of something new to the body of knowledge either in terms of approach or subject matter",
+            "Excellent structure and presentation",
+            "Well-written",
+            "Rigour in terms of argument or analysis",
+            "Relevance – to practice and further research, in most cases",
+            "Up-to-date – demonstrating that the latest/key works in the field have been cited"
+        ],
+        "criteria_text" : "Ultimately, an outstanding paper will be promoted by the publisher, which would make it stand out from the rest.",
+        "prize" : [
+            "The winning paper: $500 ",
+            "The winners will also receive a certificate."
+        ]
+    }
+
+
+}

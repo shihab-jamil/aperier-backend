@@ -38,8 +38,7 @@
 </template>
 
 <script>
-import axios from 'axios';
-import config from "@/Data/config";
+import award from "@/Data/award";
 
 export default {
     data() {
@@ -48,8 +47,7 @@ export default {
         }
     },
     async mounted() {
-        let data = (await axios.get(`${config.domain}/storage/json/award.json`)).data
-        this.award = data[`award-${this.$route.params.id}`]
+        this.award = award[`award-${this.$route.params.id}`]
     }
 }
 </script>
