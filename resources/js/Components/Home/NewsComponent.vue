@@ -16,7 +16,7 @@
                         responsibilities, and clearly stating that this is a voluntary position. <router-link
                             :to="{ name: 'News Details', params: { id: 1 } }">Read More</router-link></p>
                 </div>
-                <hr class="col-md-12 col-11">
+                <hr class="col-md-11 col-11">
             </div>
             <div class="row">
                 <div class="col-md-3 col-12">
@@ -32,7 +32,7 @@
                         publication and make it widely accessible. <router-link
                             :to="{ name: 'News Details', params: { id: 2 } }">Read More</router-link></p>
                 </div>
-                <hr class="col-md-12 col-11">
+                <hr class="col-md-11 col-11">
             </div>
             <div class="row">
                 <div class="col-md-3 col-12">
