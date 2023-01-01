@@ -1,6 +1,6 @@
 <template>
-  <HomeComponent/>
-  <NewsComponent/>
+  <HomeComponent />
+  <NewsComponent />
   <JournalsComponent />
   <AwardComponent />
   <AboutComponent />
@@ -15,7 +15,7 @@ import AwardComponent from '../Components/Home/AwardComponent.vue';
 import AboutComponent from '../Components/Home/AboutComponent.vue';
 import ContactComponent from '../Components/Home/ContactComponent.vue';
 export default {
-  components: {HomeComponent, NewsComponent, JournalsComponent, AwardComponent, AboutComponent, ContactComponent }
+  components: { HomeComponent, NewsComponent, JournalsComponent, AwardComponent, AboutComponent, ContactComponent }
 }
 </script>
 

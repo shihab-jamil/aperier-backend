@@ -1,10 +1,10 @@
 <template>
-    <section class="container-fluid white-color p-5">
+    <section class="container-fluid white-color p-md-5 p-1">
         <section-title title="Contact Us" />
         <div class="container">
-            <div class="row gx-5">
-                <div class="col-4">
-                    <div class="card-1">
+            <div class="row g-5">
+                <div class="col-md-4 col-12">
+                    <div class="card-1 p-md-3 p-lg-4 p-4">
                         <p>Aperier Publishing <br>
                             P785 Hebron <br>
                             West Bank, Palestine. <br><br>
@@ -17,28 +17,30 @@
                             Website : aperier.com</p>
                     </div>
                 </div>
-                <div class="col-8 pl-4">
+                <div class="col-md-8 col-12 pl-md-4">
                     <div class="card-2">
                         <div class="row px-5 py-3">
-                            <div class="col-6">
+                            <div class="col-md-6 col-12">
                                 <div class="form-group">
                                     <label for="name" class="form-label">Name</label>
                                     <input type="text" class="form-control" id="name" placeholder="John Doe">
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-md-6 col-12">
                                 <div class="form-group">
                                     <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="someone@gmail.com">
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                        placeholder="someone@gmail.com">
                                 </div>
                             </div>
-                            <div class="col-12 mt-3 mb-3">
+                            <div class="col-12 mb-2">
                                 <div class="form-group">
                                     <label for="message" class="form-label">Message</label>
-                                    <textarea name="message" id="message" cols="10" rows="3" class="form-control" placeholder="Message"></textarea>
+                                    <textarea name="message" id="message" cols="10" rows="3" class="form-control"
+                                        placeholder="Message"></textarea>
                                 </div>
                             </div>
-                            <div class="col-12 text-end">
+                            <div class="col-12 text-end mb-2">
                                 <button class="green-button">Submit</button>
                             </div>
                         </div>
@@ -60,8 +62,6 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 33px;
-
     width: 100%;
     height: fit-content;
 

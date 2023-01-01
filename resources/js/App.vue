@@ -13,13 +13,13 @@ export default {
     }
   },
   methods: {
-    layoutGenerator(){
-      if(localStorage.getItem("userEmail")){
+    layoutGenerator() {
+      if (localStorage.getItem("userEmail")) {
         this.layout = "AuthorLayout"
-        if(this.$router.currentRoute.value.name === 'Home' || this.$router.currentRoute.value.name === 'Login' || this.$router.currentRoute.value.name === 'Sign Up'){
-          this.$router.push({name : 'Author Dashboard'})
+        if (this.$router.currentRoute.value.name === 'Home' || this.$router.currentRoute.value.name === 'Login' || this.$router.currentRoute.value.name === 'Sign Up') {
+          this.$router.push({ name: 'Author Dashboard' })
         }
-      }else{
+      } else {
         this.layout = "PublisherLayout"
 
       }
@@ -30,7 +30,7 @@ export default {
     this.layoutGenerator()
   },
   watch: {
-    '$route' (to, from) {
+    '$route'(to, from) {
       this.layoutGenerator()
     }
   }

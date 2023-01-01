@@ -18,19 +18,28 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About Us</a>
                     </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Journals
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><router-link :to="{name:'Journal Details', params:{id:1}}" class="dropdown-item" >Sustainability Studies</router-link></li>
-                      <li><router-link :to="{name:'Journal Details', params:{id:2}}" class="dropdown-item" >Business Studies</router-link></li>
-                      <li><router-link :to="{name:'Journal Details', params:{id:3}}" class="dropdown-item" >Bibliomatric and Systematic Reviews</router-link></li>
-                      <li><router-link :to="{name:'Journal Details', params:{id:4}}" class="dropdown-item" >Marketing Studies</router-link></li>
-                      <li><router-link :to="{name:'Journal Details', params:{id:5}}" class="dropdown-item" >Finance Studies</router-link></li>
-                      <li><router-link :to="{name:'Journal Details', params:{id:6}}" class="dropdown-item" >Tourism Studies</router-link></li>
-                    </ul>
-                  </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Journals
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><router-link :to="{ name: 'Journal Details', params: { id: 1 } }"
+                                    class="dropdown-item">Sustainability Studies</router-link></li>
+                            <li><router-link :to="{ name: 'Journal Details', params: { id: 2 } }"
+                                    class="dropdown-item">Business Studies</router-link></li>
+                            <li><router-link :to="{ name: 'Journal Details', params: { id: 3 } }"
+                                    class="dropdown-item">Bibliomatric and Systematic Reviews</router-link></li>
+                            <li><router-link :to="{ name: 'Journal Details', params: { id: 4 } }"
+                                    class="dropdown-item">Marketing Studies</router-link></li>
+                            <li><router-link :to="{ name: 'Journal Details', params: { id: 5 } }"
+                                    class="dropdown-item">Finance
+                                    Studies</router-link></li>
+                            <li><router-link :to="{ name: 'Journal Details', params: { id: 6 } }"
+                                    class="dropdown-item">Tourism
+                                    Studies</router-link></li>
+                        </ul>
+                    </li>
                     <li class="nav-item">
                         <router-link :to="{ name: 'Publishing Policies' }" class="nav-link">Publishing Policies
                         </router-link>

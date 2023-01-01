@@ -1,11 +1,11 @@
 <template>
     <div class="top-hero-image">
-        <p>Our Editorial policies </p>
-        <p>Find out more about editorial and review policies</p>
+        <span>Our Editorial policies </span>
+        <span class="text-center w-100">Find out more about editorial and review policies</span>
     </div>
-    <div class="container">
+    <div class="container mb-3">
         <div class="row">
-            <div class="col-12 p-5">
+            <div class="col-12 p-md-5 p-3">
                 <AccordionComponent>
                     <AccordionItemComponent heading_id="headingOne" collapse_id="collapseOne"
                         title="Editorial Independence ">
@@ -351,9 +351,9 @@ export default {
 <style scoped>
 .top-hero-image {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     width: 100%;
     height: 260px;
     margin-top: 60px;
@@ -361,14 +361,14 @@ export default {
     background-size: cover;
 }
 
-.top-hero-image p:nth-child(1) {
+.top-hero-image span:nth-child(1) {
     font-weight: 400;
     font-size: 40px;
     line-height: 48px;
     color: rgba(0, 0, 0, 0.8);
 }
 
-.top-hero-image p:nth-child(2) {
+.top-hero-image span:nth-child(2) {
     font-weight: 400;
     font-size: 24px;
     color: #000000;

@@ -1,6 +1,6 @@
 <template>
     <section style=" margin-top: 60px;">
-        <div class="container p-5">
+        <div class="container p-lg-5 p-3">
             <div class="row gy-2">
                 <div class="col-12 form-title">
                     <span>Aperier</span>
@@ -8,7 +8,7 @@
                 </div>
                 <form action="" method="post" @submit.prevent="handleForm()">
                     <div class="col-12 bg-custom-gray">
-                        <div class="col-6 offset-3 p-4">
+                        <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 p-4">
                             <div class="custom-form-group">
                                 <span>Prefix<span class="text-danger">*</span></span>
                                 <select name="" class="w-50" id="" v-model="formData.prefix">
@@ -38,7 +38,7 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="col-6 offset-3 p-4">
+                        <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 p-4">
                             <div class="custom-form-group">
                                 <span>Primary E-Mail:<span class="text-danger">*</span></span>
                                 <input type="email" class="custom-input" v-model="formData.email">
@@ -58,7 +58,7 @@
                         </div>
                     </div>
                     <div class="col-12 bg-custom-gray">
-                        <div class="col-6 offset-3 p-4">
+                        <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 p-4">
                             <div class="custom-form-group">
                                 <span>Department:</span>
                                 <input type="text" class="custom-input" v-model="formData.department">
@@ -78,7 +78,7 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="col-6 offset-3 p-4">
+                        <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 p-4">
                             <div class="custom-form-group">
                                 <span>Areas of Expertise:</span>
                                 <div class="w-50">
@@ -117,7 +117,7 @@
                         </div>
                     </div>
                     <div class="col-12 bg-custom-gray">
-                        <div class="col-6 offset-3 p-4">
+                        <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 p-4">
                             <div class="custom-form-group">
                                 <span>Password:<span class="text-danger">*</span></span>
                                 <input type="password" class="custom-input" v-model="formData.password">

@@ -6,8 +6,8 @@
           <span>Aperier</span>
           <span>Login System</span>
         </div>
-        <div class="col-12 p-5">
-          <div class="col-6 offset-3 login-form">
+        <div class="col-12 p-md-5 p-1">
+          <div class="col-lg-6 offset-lg-3 col-md-10 offset-md-1 col-12 login-form">
             <div class="form-header">
               <p class="pt-3">Login to Website</p>
               <div class="logo-background"></div>

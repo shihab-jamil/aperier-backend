@@ -2,10 +2,10 @@
     <div class="journal-details">
         <div class="container-fluid">
             <div class="row py-5 px-3">
-                <div class="col-2">
+                <div class="col-lg-2 d-none d-lg-block">
                     <img src="../../Assets/journal-cover.png" class="img-fluid" alt="">
                 </div>
-                <div class="col-8" v-if="data">
+                <div class="col-lg-8 col-md-8" v-if="data">
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active p-3" id="general-information" role="tabpanel"
                             aria-labelledby="general-information-tab">
@@ -704,7 +704,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" col-2">
+                <div class="col-lg-2 col-md-4">
                     <ul class="nav nav-pills flex-column " id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="general-information-tab" data-bs-toggle="tab"
@@ -768,7 +768,6 @@
                         <button>Submit Manuscript</button>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -913,8 +912,8 @@ export default {
 }
 
 .contact-us-card {
-    width: 698px;
-    height: 507px;
+    width: 100%;
+    height: fit-content;
     padding: 30px;
     display: flex;
     flex-direction: column;

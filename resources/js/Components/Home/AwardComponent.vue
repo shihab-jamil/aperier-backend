@@ -1,9 +1,9 @@
 <template>
-    <section class="container-fluid white-color p-5">
+    <section class="container-fluid white-color p-md-5 p-3">
         <section-title title="Awards" />
         <div class="container">
-            <div class="row g-4" >
-                <div class="col-4 px-4">
+            <div class="row justify-content-center g-5">
+                <div class="col-lg-4 col-md-6 col-12 px-md-4 px-1">
                     <div class="custom-card">
                         <p class="custom-card-title">Best Article Award 2023</p>
                         <p class="custom-card-text">We are pleased to announce the “Best Paper Award” for research and
@@ -12,7 +12,7 @@
                             Committee.</p>
                     </div>
                 </div>
-                <div class="col-4 px-4">
+                <div class="col-lg-4 col-md-6 col-12 px-md-4 px-1">
                     <div class="custom-card">
                         <p class="custom-card-title">Best Reviewer Award 2023</p>
                         <p class="custom-card-text">We wish to acknowledge our reviewers who so generously offer their
@@ -21,7 +21,7 @@
                             reviewing manuscripts.</p>
                     </div>
                 </div>
-                <div class="col-4 px-4">
+                <div class="col-lg-4 col-md-6 col-12 px-md-4 px-1">
                     <div class="custom-card">
                         <p class="custom-card-title">Travel Award 2023</p>
                         <p class="custom-card-text">This award provides financial support for the winners to attend an

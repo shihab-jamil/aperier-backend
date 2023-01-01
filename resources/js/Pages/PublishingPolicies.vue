@@ -3,9 +3,9 @@
     <p>Our Research Publishing Policies and Ethics</p>
     <p>Find out more about publication ethics and our policies</p>
   </div>
-  <div class="container">
+  <div class="container mb-3">
     <div class="row">
-      <div class="col-12 p-5">
+      <div class="col-12 p-md-5 p-3">
         <AccordionComponent>
           <AccordionItemComponent heading_id="headingOne" collapse_id="collapseOne" title="Ethical Oversight">
             <p>The policy of the journals, issued by Aperier, concerning the oversight on how the ethical principles are
