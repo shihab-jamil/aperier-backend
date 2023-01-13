@@ -11,7 +11,7 @@
                 <br><br>
                 <span v-html="data.content" ></span>
                 <br>
-                <img :src="`${domain}/storage/upload/news/${data.image}`" class="img-fluid" alt="">
+                <img :src="`/storage/upload/news/${data.image}`" class="img-fluid" alt="">
             </div>
         </div>
     </div>
