@@ -27,17 +27,17 @@
     "file": "assets/journal_2.f21901c5.png",
     "src": "resources/js/Assets/journal_2.png"
   },
-  "resources/js/Assets/journal_3.png": {
-    "file": "assets/journal_3.7dcfd42a.png",
-    "src": "resources/js/Assets/journal_3.png"
+  "resources/js/Assets/journal_5.png": {
+    "file": "assets/journal_5.37879ff9.png",
+    "src": "resources/js/Assets/journal_5.png"
   },
   "resources/js/Assets/journal_4.png": {
     "file": "assets/journal_4.11861d88.png",
     "src": "resources/js/Assets/journal_4.png"
   },
-  "resources/js/Assets/journal_5.png": {
-    "file": "assets/journal_5.37879ff9.png",
-    "src": "resources/js/Assets/journal_5.png"
+  "resources/js/Assets/journal_3.png": {
+    "file": "assets/journal_3.7dcfd42a.png",
+    "src": "resources/js/Assets/journal_3.png"
   },
   "resources/js/Assets/journal_6.png": {
     "file": "assets/journal_6.932bc54d.png",
@@ -57,11 +57,11 @@
     "isEntry": true
   },
   "resources/js/main.js": {
-    "file": "assets/main.2420e578.js",
+    "file": "assets/main.70f5c373.js",
     "src": "resources/js/main.js",
     "isEntry": true,
     "css": [
-      "assets/main.01a2a2a6.css"
+      "assets/main.ced443aa.css"
     ],
     "assets": [
       "assets/logo.ca67b92a.svg",
@@ -80,7 +80,7 @@
     ]
   },
   "resources/js/main.css": {
-    "file": "assets/main.01a2a2a6.css",
+    "file": "assets/main.ced443aa.css",
     "src": "resources/js/main.css"
   }
 }
