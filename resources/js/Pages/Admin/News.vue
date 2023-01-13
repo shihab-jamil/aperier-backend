@@ -25,7 +25,7 @@
                         <tbody>
                             <tr v-for="item in data" :key="item.id" >
                                 <td class="p-2">
-                                    <img :src="`${domain}/storage/upload/news/${item.image}`" class="img-fluid" alt="">
+                                    <img :src="`/storage/upload/news/${item.image}`" class="img-fluid" alt="">
                                 </td>
                                 <td>{{ item.title }}</td>
                                 <td>{{ item.date }}</td>

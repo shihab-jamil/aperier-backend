@@ -1,6 +1,6 @@
 <template>
     <div class="news-card">
-        <img :src="`${domain}/storage/upload/news/${news.image}`" class="img-fluid" alt="">
+        <img :src="`/storage/upload/news/${news.image}`" class="img-fluid" alt="">
         <div class="news-card-body">
             <div class="news-title">
                 <span>{{ news.title }}</span>

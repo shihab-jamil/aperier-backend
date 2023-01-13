@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row" v-for="item in news" :key="item.id">
                 <div class="col-md-3 col-12">
-                    <img :src="`${domain}/storage/upload/news/${item.image}`" class="img-fluid" alt="">
+                    <img :src="`/storage/upload/news/${item.image}`" class="img-fluid" alt="">
                 </div>
                 <div class="col-md-9 col-12 px-md-5 px-3 mb-4 d-flex flex-column">
                     <p class="news-title">{{ item.title }}</p>

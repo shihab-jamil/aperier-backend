@@ -14,7 +14,7 @@
                         <div class="card-body">
                             <form class="d-flex flex-column" @submit.prevent="submit">
                                 <div class="mb-3">
-                                    <img :src="`${domain}/storage/upload/news/${formData.image}`" class="img-fluid" alt="">
+                                    <img :src="`/storage/upload/news/${formData.image}`" class="img-fluid" alt="">
                                 </div>
                                 <div class="mb-3">
                                     <label for="title" class="form-label">Title</label>
