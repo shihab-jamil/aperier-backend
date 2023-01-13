@@ -32,6 +32,7 @@ return new class extends Migration
             $table->boolean("receive_reviews_request");
             $table->boolean("join_editorial_team");
             $table->boolean("privacy_acknowledgement");
+            $table->boolean("is_admin")->default(false);
             $table->rememberToken();
             $table->timestamps();
         });

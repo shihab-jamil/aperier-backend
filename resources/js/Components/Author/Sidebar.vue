@@ -52,7 +52,8 @@
 export default {
     methods: {
         logout() {
-          localStorage.removeItem("userEmail");
+            localStorage.removeItem("userEmail");
+            localStorage.removeItem("isAdmin");
             this.$router.push({ name: 'Home' });
         }
     },

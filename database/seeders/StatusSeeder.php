@@ -15,8 +15,8 @@ class StatusSeeder extends Seeder
      */
     public function run()
     {
-        $array = ["With Editor", "In Review", "Revision Required" , "Accepted"];
-        foreach ($array as $item){
+        $array = ["With Editor", "In Review", "Revision Required", "Accepted", "Archived", "Published"];
+        foreach ($array as $item) {
             Status::create([
                 "name" => $item
             ]);

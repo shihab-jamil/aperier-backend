@@ -683,8 +683,8 @@
                         </div>
                     </div>
                     <hr>
-                    <SectionTitleComponent title="Current Issue" />
-                    <div class="current-issue">
+                    <SectionTitleComponent title="Current Issue" v-if="studyListPerJournal.length > 0" />
+                    <div class="current-issue"  v-if="studyListPerJournal.length > 0">
                         <div class="row g-3">
                             <JournalListCardComponent v-for="item in studyListPerJournal" :key="item.id" class="col-12"
                                 :title="item.title"

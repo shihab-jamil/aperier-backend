@@ -74,15 +74,18 @@ export default {
       }
     },
     async mounted() {
-      this.studyList = (await axios.get(`${config.domain}/api/all-studies`)).data.data;
+        let email =  localStorage.getItem('userEmail')
+      this.studyList = (await axios.get(`${config.domain}/api/all-studies?email=${email}`)).data.data;
     },
     methods:{
       badgeColor(value){
         switch (value) {
+          case "Published":
           case "Accepted":
             return "badge bg-success";
           case "With Editor":
             return "badge bg-info";
+          case 'Archived':
           case "In Review":
             return "badge bg-warning";
           case "Revision Required":

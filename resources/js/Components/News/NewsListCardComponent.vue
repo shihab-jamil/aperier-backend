@@ -1,13 +1,13 @@
 <template>
     <div class="news-card">
-        <img :src="src" alt="">
+        <img :src="`${domain}/storage/upload/news/${news.image}`" class="img-fluid" alt="">
         <div class="news-card-body">
             <div class="news-title">
-                <span>{{ title }}</span>
-                <span>{{ date }}</span>
+                <span>{{ news.title }}</span>
+                <span>{{ news.date }}</span>
             </div>
             <div class="px-4">
-                <router-link :to="{ name: 'News Details', params: { id: id } }"><i
+                <router-link :to="{ name: 'News Details', params: { id: news.id } }"><i
                         class="fa-solid fa-arrow-right bg-secondary p-2 rounded-pill text-white"></i></router-link>
             </div>
         </div>
@@ -15,8 +15,15 @@
 </template>
 
 <script>
+import config from "../../Data/config";
+
 export default {
-    props: ["src", "title", "date", "id"]
+    props: ["news"],
+    data(){
+        return{
+            domain : config.domain
+        }
+    }
 }
 </script>
 

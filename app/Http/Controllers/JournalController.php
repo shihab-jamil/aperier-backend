@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Journal;
+use App\Models\Status;
 use App\Models\StudyType;
 use Illuminate\Http\Request;
 
@@ -18,8 +19,10 @@ class JournalController extends Controller
         try {
             $journals = Journal::all();
             $studyTypes = StudyType::all();
+            $status = Status::all();
             $array["journals"] =  $journals;
             $array["studyTypes"]= $studyTypes;
+            $array["status"]= $status;
 
             return sendSuccessResponse($array, "Data retrieved successfully", 200);
         } catch (\Throwable $e) {

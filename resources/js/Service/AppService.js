@@ -5,7 +5,14 @@
 // import Data from "../../Data/Data";
 
 
-var AppService = {
+const AppService = {
+    isAdmin(){
+      return JSON.parse(localStorage.getItem("isAdmin"))
+    },
+    isLoggedIn(){
+        return !!localStorage.getItem("userEmail");
+    },
+
     // layoutGenerator() {
     //     const router = useRouter();
     //     if (router.currentRoute.value.name == 'Login' ||

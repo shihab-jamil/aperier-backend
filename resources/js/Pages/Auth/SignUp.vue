@@ -227,7 +227,7 @@ export default {
                             join_editorial_team: false,
                             privacy_acknowledgement: false,
                         }
-                        this.$route.push({ name: 'Sign Up Success' })
+                        this.$router.push({ name: 'Sign Up Success' })
                     } else {
                         this.$swal({
                             text: response.data.message,

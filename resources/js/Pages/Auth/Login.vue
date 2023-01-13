@@ -73,7 +73,12 @@ export default {
             password: ""
           }
           localStorage.setItem("userEmail", response.data.data.email)
-          this.$router.push({ name: 'Author Dashboard' })
+          localStorage.setItem("isAdmin", response.data.data.is_admin ? true : false)
+          if (response.data.data.is_admin) {
+            this.$router.push({ name: 'Admin Dashboard' })
+          } else {
+            this.$router.push({ name: 'Author Dashboard' })
+          }
         }
         else {
           this.$swal({

@@ -5,23 +5,8 @@
     <section-title-component title="All News" class="mt-3" />
     <div class="container p-5">
         <div class="row g-4">
-            <div class="col-12">
-                <NewsListCardComponent src="../src/Assets/Trophy.png" title="News 1" date="25 Nov" id="1" />
-            </div>
-            <div class="col-12">
-                <NewsListCardComponent src="../src/Assets/Trophy.png" title="News 2" date="25 Nov" id="2" />
-            </div>
-            <div class="col-12">
-                <NewsListCardComponent src="../src/Assets/Trophy.png" title="News 3" date="25 Nov" id="3" />
-            </div>
-            <div class="col-12">
-                <NewsListCardComponent src="../src/Assets/Trophy.png" title="News 4" date="25 Nov" id="4" />
-            </div>
-            <div class="col-12">
-                <NewsListCardComponent src="../src/Assets/Trophy.png" title="News 5" date="25 Nov" id="5" />
-            </div>
-            <div class="col-12">
-                <NewsListCardComponent src="../src/Assets/Trophy.png" title="News 6" date="25 Nov" id="6" />
+            <div class="col-12" v-for="item in data" :key="item.id">
+                <NewsListCardComponent :news="item" />
             </div>
         </div>
     </div>
@@ -30,9 +15,20 @@
 <script>
 import NewsListCardComponent from '../../Components/News/NewsListCardComponent.vue';
 import SectionTitleComponent from '../../Components/SectionTitleComponent.vue';
+import config from "../../Data/config";
+import axios from "axios";
 
 export default {
-    components: { NewsListCardComponent, SectionTitleComponent }
+    components: { NewsListCardComponent, SectionTitleComponent },
+    data(){
+        return{
+            data : [],
+            domain : config.domain
+        }
+    },
+    async mounted(){
+        this.data = (await axios.get(`${config.domain}/api/news`)).data.data
+    },
 }
 </script>
 
