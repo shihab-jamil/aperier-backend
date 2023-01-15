@@ -1,47 +1,43 @@
 {
-  "resources/js/Assets/journal-cover.png": {
-    "file": "assets/journal-cover.fc738ed7.png",
-    "src": "resources/js/Assets/journal-cover.png"
-  },
   "resources/js/Assets/Trophy.png": {
     "file": "assets/Trophy.25e9c9ca.png",
     "src": "resources/js/Assets/Trophy.png"
-  },
-  "resources/js/Assets/bird.png": {
-    "file": "assets/bird.efc9b1b5.png",
-    "src": "resources/js/Assets/bird.png"
-  },
-  "resources/js/Assets/books.png": {
-    "file": "assets/books.85e6d0ea.png",
-    "src": "resources/js/Assets/books.png"
-  },
-  "resources/js/Assets/journal_1.png": {
-    "file": "assets/journal_1.0e107a9d.png",
-    "src": "resources/js/Assets/journal_1.png"
-  },
-  "resources/js/Assets/journal_2.png": {
-    "file": "assets/journal_2.f21901c5.png",
-    "src": "resources/js/Assets/journal_2.png"
   },
   "resources/js/Assets/journal_3.png": {
     "file": "assets/journal_3.7dcfd42a.png",
     "src": "resources/js/Assets/journal_3.png"
   },
+  "resources/js/Assets/journal_2.png": {
+    "file": "assets/journal_2.f21901c5.png",
+    "src": "resources/js/Assets/journal_2.png"
+  },
   "resources/js/Assets/journal_4.png": {
     "file": "assets/journal_4.11861d88.png",
     "src": "resources/js/Assets/journal_4.png"
   },
-  "resources/js/Assets/journal_5.png": {
-    "file": "assets/journal_5.37879ff9.png",
-    "src": "resources/js/Assets/journal_5.png"
+  "resources/js/Assets/journal_1.png": {
+    "file": "assets/journal_1.0e107a9d.png",
+    "src": "resources/js/Assets/journal_1.png"
   },
   "resources/js/Assets/journal_6.png": {
     "file": "assets/journal_6.932bc54d.png",
     "src": "resources/js/Assets/journal_6.png"
   },
+  "resources/js/Assets/journal_5.png": {
+    "file": "assets/journal_5.37879ff9.png",
+    "src": "resources/js/Assets/journal_5.png"
+  },
+  "resources/js/Assets/bird.png": {
+    "file": "assets/bird.efc9b1b5.png",
+    "src": "resources/js/Assets/bird.png"
+  },
   "resources/js/Assets/logo.svg": {
     "file": "assets/logo.ca67b92a.svg",
     "src": "resources/js/Assets/logo.svg"
+  },
+  "resources/js/Assets/books.png": {
+    "file": "assets/books.85e6d0ea.png",
+    "src": "resources/js/Assets/books.png"
   },
   "resources/js/Assets/welcome_background.png": {
     "file": "assets/welcome_background.13923e6c.png",
@@ -57,11 +53,11 @@
     "isEntry": true
   },
   "resources/js/main.js": {
-    "file": "assets/main.da9da908.js",
+    "file": "assets/main.e28ab8e3.js",
     "src": "resources/js/main.js",
     "isEntry": true,
     "css": [
-      "assets/main.51046cbe.css"
+      "assets/main.98826ffe.css"
     ],
     "assets": [
       "assets/logo.ca67b92a.svg",
@@ -74,13 +70,12 @@
       "assets/journal_5.37879ff9.png",
       "assets/journal_6.932bc54d.png",
       "assets/Trophy.25e9c9ca.png",
-      "assets/journal-cover.fc738ed7.png",
       "assets/welcome_background.13923e6c.png",
       "assets/glasses.5e1f1427.png"
     ]
   },
   "resources/js/main.css": {
-    "file": "assets/main.51046cbe.css",
+    "file": "assets/main.98826ffe.css",
     "src": "resources/js/main.css"
   }
 }

@@ -19,31 +19,33 @@
                 </div>
                 <div class="col-md-8 col-12 pl-md-4">
                     <div class="card-2">
-                        <div class="row px-5 py-3">
-                            <div class="col-md-6 col-12">
-                                <div class="form-group">
-                                    <label for="name" class="form-label">Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="John Doe">
+                        <form ref="form" @submit.prevent="sendEmail">
+                            <div class="row px-5 py-3">
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="name" class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="from_name" placeholder="John Doe">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" name="email_id" class="form-control" id="email" aria-describedby="emailHelp"
+                                            placeholder="someone@gmail.com">
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-2">
+                                    <div class="form-group">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea name="message" id="message" cols="10" rows="3" class="form-control"
+                                            placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-end mb-2">
+                                    <button class="green-button" type="submit">Submit</button>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-12">
-                                <div class="form-group">
-                                    <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                                        placeholder="someone@gmail.com">
-                                </div>
-                            </div>
-                            <div class="col-12 mb-2">
-                                <div class="form-group">
-                                    <label for="message" class="form-label">Message</label>
-                                    <textarea name="message" id="message" cols="10" rows="3" class="form-control"
-                                        placeholder="Message"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-12 text-end mb-2">
-                                <button class="green-button">Submit</button>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -52,8 +54,34 @@
 </template>
 
 <script>
+import emailjs from '@emailjs/browser';
 export default {
-
+    data(){
+        return{
+            form:{
+                from_name : "",
+                email_id : "",
+                message : ""
+            }
+        }
+    },
+    methods:{
+        sendEmail() {
+            emailjs.sendForm('service_3rg0t6u', 'template_ywfnu0a', this.$refs.form, '2ZgodGTTVZlxB4m5q')
+                .then((result) => {
+                    this.$refs.form.reset();
+                    this.$swal({
+                        text: "Email has been sent successfully",
+                        icon: "success"
+                    });
+                }, (error) => {
+                    this.$swal({
+                        text: "Please try again",
+                        icon: "error"
+                    });
+                });
+        }
+    }
 }
 </script>
 

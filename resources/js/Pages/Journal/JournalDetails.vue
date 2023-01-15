@@ -2,8 +2,23 @@
     <div class="journal-details">
         <div class="container-fluid">
             <div class="row py-5 px-3">
-                <div class="col-lg-2 d-none d-lg-block">
-                    <img src="../../Assets/journal-cover.png" class="img-fluid" alt="">
+                <div class="col-lg-2 d-none d-lg-block" v-if="this.$route.params.id==1">
+                    <img src="../../Assets/journal_1.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-2 d-none d-lg-block" v-else-if="this.$route.params.id==2">
+                    <img src="../../Assets/journal_2.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-2 d-none d-lg-block" v-else-if="this.$route.params.id==3">
+                    <img src="../../Assets/journal_3.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-2 d-none d-lg-block" v-else-if="this.$route.params.id==4">
+                    <img src="../../Assets/journal_4.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-2 d-none d-lg-block" v-else-if="this.$route.params.id==5">
+                    <img src="../../Assets/journal_5.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-2 d-none d-lg-block" v-else-if="this.$route.params.id==6">
+                    <img src="../../Assets/journal_6.png" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-8 col-md-8" v-if="data">
                     <div class="tab-content" id="myTabContent">
@@ -807,6 +822,11 @@ export default {
         })
         this.journalDetails = journal[`journal-${this.$route.params.id}`]
         this.data = true
+    },
+    methods:{
+        generateImage(){
+            return "../../Assets/journal_1.png";
+        }
     }
 
 }

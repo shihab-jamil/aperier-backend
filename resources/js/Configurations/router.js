@@ -104,7 +104,7 @@ const routes = [
   },
   {
     path: '/sign-up-success',
-    name: 'Sign Up success',
+    name: 'Sign Up Success',
     component: SignUpSuccess,
   },
   {
