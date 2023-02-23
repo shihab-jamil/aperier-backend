@@ -1,9 +1,9 @@
 <template>
-    <HeaderComponent />
+    <HeaderComponent v-if="this.$route.name !== 'Preview Pdf'" />
     <router-view :key="$route.path" />
-    <FooterComponent />
+    <FooterComponent v-if="this.$route.name !== 'Preview Pdf'" />
 </template>
-  
+
 <script>
 import HeaderComponent from '../Components/HeaderComponent.vue';
 import FooterComponent from '../Components/FooterComponent.vue';
@@ -11,7 +11,7 @@ export default {
     components: { HeaderComponent, FooterComponent }
 }
 </script>
-  
+
 <style>
 .gray-color {
     background-color: #F3F3F3;

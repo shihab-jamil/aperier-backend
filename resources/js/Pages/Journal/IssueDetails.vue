@@ -34,7 +34,10 @@
                         </button>
                         <button class="btn-download">
                             <i class="fa-solid fa-eye"></i>
-                            <span>Preview</span>
+                            <span v-if="fileUrl">
+                                <router-link target="_blank" :to="{name : 'Preview Pdf', params : { url : fileUrl }}">Preview</router-link>
+                            </span>
+                            <span v-else>Preview</span>
                         </button>
                     </div>
                 </div>
@@ -138,12 +141,21 @@ export default {
     async mounted(){
         await axios.get(`${config.domain}/api/studies-details/`+this.$route.params.id).then(response => {
             this.studyDetails = response.data.data
-            this.studyDetails.study_authors = this.studyDetails.study_authors.map(item => item = item.first_name+' '+item.middle_name+' '+item.last_name)
-            let last_author = this.studyDetails.study_authors.pop()
-            this.studyDetails.study_authors = this.studyDetails.study_authors.join(', ')+'and '+last_author
+            this.studyDetails.study_authors = this.studyDetails.study_authors.map(item => {
+                let first_name = item.first_name;
+                let middle_name = item.middle_name ?? "";
+                let last_name = item.last_name ;
+                return first_name + ' ' + middle_name + ' ' + last_name
+            })
+            if(this.studyDetails.study_authors.length > 1){
+                let last_author = this.studyDetails.study_authors.pop()
+                this.studyDetails.study_authors = this.studyDetails.study_authors.join(', ')+'and '+last_author
+            }else{
+                this.studyDetails.study_authors = this.studyDetails.study_authors.join(', ')
+            }
             this.study = this.studyDetails.study
             this.study.volume = this.study.volume.slice(-1)
-            this.fileUrl = config.domain+'/storage/upload/studies/'+this.study.manuscript_file
+            this.fileUrl = config.domain+'/storage/public/upload/studies/'+this.study.manuscript_file
         }).catch(error => {
             console.log(error)
         })
@@ -164,6 +176,10 @@ export default {
 </script>
 
 <style scoped>
+a {
+    text-decoration: none;
+    color: unset;
+}
 ul li {
     margin-bottom: 15px;
 }

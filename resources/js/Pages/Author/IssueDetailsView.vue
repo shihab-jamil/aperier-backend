@@ -59,20 +59,9 @@
                                 <span class="nav-link py-2">Authors</span>
                                 <hr>
                             </div>
-
-<!--                            <div class="row">-->
-<!--                                <div class="row">-->
-<!--                                    <div class="col-2">Submitting author</div>-->
-<!--                                    <div class="col-10">Saleh Khatib</div>-->
-<!--                                </div>-->
-<!--                                <div class="row">-->
-<!--                                    <div class="col-2">Corresponding author</div>-->
-<!--                                    <div class="col-10">Saleh Khatib</div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-                            <div class="row" v-for="item in authors" :key="item.id">
+                            <div class="row" v-for="(item, index) in authors" :key="item.id">
                                 <div class="row">
-                                    <div class="col-2">Author #{{ item.id+1 }}</div>
+                                    <div class="col-2">Author #{{ parseInt(index) + 1 }}</div>
                                     <div class="col-10">{{ item.first_name+" "+item.middle_name+" "+item.last_name }}</div>
                                 </div>
                                 <div class="row">
@@ -80,26 +69,6 @@
                                     <div class="col-10">{{ item.email }}</div>
                                 </div>
                             </div>
-<!--                            <div class="row">-->
-<!--                                <div class="row">-->
-<!--                                    <div class="col-2">Author #2</div>-->
-<!--                                    <div class="col-10">Ali Khalif</div>-->
-<!--                                </div>-->
-<!--                                <div class="row">-->
-<!--                                    <div class="col-2">Email</div>-->
-<!--                                    <div class="col-10">Salle.dabodsslla@gmail.com</div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="row">-->
-<!--                                <div class="row">-->
-<!--                                    <div class="col-2">Author #3</div>-->
-<!--                                    <div class="col-10">Ali Khalif</div>-->
-<!--                                </div>-->
-<!--                                <div class="row">-->
-<!--                                    <div class="col-2">Email</div>-->
-<!--                                    <div class="col-10">Salle.dabodsslla@gmail.com</div>-->
-<!--                                </div>-->
-<!--                            </div>-->
 
                         </div>
                         <!-- main content end -->

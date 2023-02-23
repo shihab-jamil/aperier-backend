@@ -32,7 +32,7 @@
                     </div>
                   </form>
                 </div>
-                <p class="align-self-end mt-2 text-white">Forgot Password?</p>
+                <p class="align-self-end mt-2 text-white"><router-link :to="{ name: 'Forget Password' }" style="text-decoration:none; color:unset">Forgot Password?</router-link></p>
                 <button type="submit" class="btn-login">Login</button>
                 <p class="align-self-end mt-3 mb-0 text-white">Don’t have an account? <br>
                   <router-link :to="{ name: 'Sign Up' }" style="text-decoration:none; color:unset">Create a Free
@@ -64,6 +64,7 @@ export default {
     async handleForm() {
       await axios.post(`${config.domain}/api/login`, this.formData).then(response => {
         if (response.data.success) {
+            console.log(response)
           this.$swal({
             text: "Login successfully",
             icon: "success"
@@ -73,6 +74,8 @@ export default {
             password: ""
           }
           localStorage.setItem("userEmail", response.data.data.email)
+            let middleName = response.data.data.middle_name ?? "";
+            localStorage.setItem("userName", response.data.data.first_name+" "+middleName+" "+response.data.data.last_name)
           localStorage.setItem("isAdmin", response.data.data.is_admin ? true : false)
           if (response.data.data.is_admin) {
             this.$router.push({ name: 'Admin Dashboard' })

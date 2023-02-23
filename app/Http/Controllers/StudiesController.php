@@ -99,7 +99,7 @@ class StudiesController extends Controller
                 "accepted_at" => null
             ]);
             $volume = "Volume ";
-            $volume .= (int)date('Y') - 2021;
+            $volume .= (int)date('Y') - 2022;
 
             StudyMetadata::create([
                 "study_id" => $study->id,
@@ -345,17 +345,27 @@ class StudiesController extends Controller
     public function adminStudyStore(Request $request, $id){
         try{
             $study = Study::whereId($id)->first();
+            if(!empty($request->manuscript_file)){
+                $fileName = time().'_'.$request->manuscript_file->getClientOriginalName();
+                $request->manuscript_file->storeAs('public/upload/studies', $fileName);
+                $study->update([
+                    "manuscript_file" => $fileName,
+                ]);
+            }
+
+
+            $request = json_decode($request->data, true);
             $study->update([
-                "status_id" => $request->status,
-                "journal_id" => $request->journals,
-                "study_type_id" => $request->studyTypes,
-                "title" => $request->title,
-                "abstract" => $request->abstract,
-                "comment" => $request->comments,
+                "status_id" => $request['status'],
+                "journal_id" => $request['journals'],
+                "study_type_id" => $request['studyTypes'],
+                "title" => $request['title'],
+                "abstract" => $request['abstract'],
+                "comment" => $request['comments'],
             ]);
 
             //save keywords
-            $keywords = explode(";",$request->keywords);
+            $keywords = explode(";",$request['keywords']);
             StudyKeywords::where("study_id", $id)->delete();
             foreach ($keywords AS $item){
                 StudyKeywords::create([
@@ -365,7 +375,7 @@ class StudiesController extends Controller
             }
 
             //save authors
-            $authors = $request->authors;
+            $authors = $request['authors'];
             StudyAuthor::where("study_id", $id)->delete();
             foreach($authors as $item){
                 StudyAuthor::create([
@@ -381,7 +391,7 @@ class StudiesController extends Controller
             }
 
             //save tables
-            $tables = $request->tables;
+            $tables = $request['tables'];
             StudyTable::where("study_id", $id)->delete();
             foreach ($tables AS $item){
                 StudyTable::create([
@@ -391,7 +401,7 @@ class StudiesController extends Controller
             }
 
             //save figures
-            $figures = $request->figures;
+            $figures = $request['figures'];
             StudyFigure::where("study_id", $id)->delete();
             foreach ($figures AS $item){
                 StudyFigure::create([
@@ -401,7 +411,7 @@ class StudiesController extends Controller
             }
 
             //save contributions
-            $contributions = $request->contributions;
+            $contributions = $request['contributions'];
             StudyContribution::where("study_id", $id)->delete();
             foreach ($contributions AS $item){
                 StudyContribution::create([
@@ -411,7 +421,7 @@ class StudiesController extends Controller
             }
 
             //save references
-            $references = $request->references;
+            $references = $request['references'];
             StudyReference::where("study_id", $id)->delete();
             foreach ($references AS $item){
                 StudyReference::create([
@@ -422,6 +432,28 @@ class StudiesController extends Controller
             }
 
             return sendSuccessResponse($study, "Study Updated successfully", 200);
+        } catch (\Throwable $e) {
+            return sendErrorResponse('Database Error!', $e->getMessage(), 500);
+        }
+    }
+
+    function searchStudies(Request $request){
+        try {
+            $query = $request->toArray()['query'];
+            $study = DB::table('study')
+                ->join("status", "study.status_id", "=", "status.id")
+                ->join('users', 'study.user_id', '=', 'users.id')
+                ->join('study_metadata' , 'study.id' , '=', 'study_metadata.study_id')
+                ->join('study_types', 'study_types.id', '=', 'study.study_type_id')
+                ->select('study.*', 'users.first_name' ,'users.middle_name', 'users.last_name', 'study_metadata.volume', 'study_metadata.issue','study_metadata.page', 'study_metadata.downloads', 'study_metadata.views', 'study_types.name')
+                ->orderBy('study.created_at', 'DESC')
+                ->where("status.name", "Published")
+                ->where("study.title", 'LIKE','%'.$query.'%')
+                ->orWhere("users.first_name", 'LIKE','%'.$query.'%')
+                ->orWhere("users.middle_name", 'LIKE','%'.$query.'%')
+                ->orWhere("users.last_name", 'LIKE','%'.$query.'%')->get();
+
+            return sendSuccessResponse($study, "Search successful", 200);
         } catch (\Throwable $e) {
             return sendErrorResponse('Database Error!', $e->getMessage(), 500);
         }

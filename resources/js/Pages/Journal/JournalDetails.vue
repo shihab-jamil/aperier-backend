@@ -780,7 +780,7 @@
                     </ul>
                     <div class=" mt-5 submit-script">
                         <span>SUBMIT YOUR MANUSCRIPT</span>
-                        <button>Submit Manuscript</button>
+                        <button @click="gotoSubmitPage()">Submit Manuscript</button>
                     </div>
                 </div>
             </div>
@@ -826,6 +826,9 @@ export default {
     methods:{
         generateImage(){
             return "../../Assets/journal_1.png";
+        },
+        gotoSubmitPage(){
+            this.$router.push({name: 'Author Submit'})
         }
     }
 

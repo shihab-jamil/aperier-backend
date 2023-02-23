@@ -6,12 +6,12 @@
                     <span>Aperier</span>
                     <span>Submission System</span>
                 </div>
-                <form action="" method="post" @submit.prevent="handleForm()">
+                <form action="#" method="post" @submit.prevent="handleForm()">
                     <div class="col-12 bg-custom-gray">
                         <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 p-4">
                             <div class="custom-form-group">
                                 <span>Prefix<span class="text-danger">*</span></span>
-                                <select name="" class="w-50" id="" v-model="formData.prefix">
+                                <select name="prefix" class="w-50" id="" v-model="formData.prefix" required>
                                     <option value="Dr.">Dr.</option>
                                     <option value="Mr.">Mr.</option>
                                     <option value="Mrs.">Mrs.</option>
@@ -21,7 +21,7 @@
                             </div>
                             <div class="custom-form-group">
                                 <span>First (Given) Name:<span class="text-danger">*</span></span>
-                                <input type="text" class="custom-input" v-model="formData.first_name">
+                                <input type="text" class="custom-input" v-model="formData.first_name" required>
                             </div>
                             <div class="custom-form-group">
                                 <span>Middle Name:</span>
@@ -29,7 +29,7 @@
                             </div>
                             <div class="custom-form-group">
                                 <span>Last (Family) Name:<span class="text-danger">*</span></span>
-                                <input type="text" class="custom-input" v-model="formData.last_name">
+                                <input type="text" class="custom-input" v-model="formData.last_name" required>
                             </div>
                             <div class="custom-form-group">
                                 <span>Degree:</span>
@@ -41,11 +41,11 @@
                         <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 p-4">
                             <div class="custom-form-group">
                                 <span>Primary E-Mail:<span class="text-danger">*</span></span>
-                                <input type="email" class="custom-input" v-model="formData.email">
+                                <input type="email" class="custom-input" v-model="formData.email" required>
                             </div>
                             <div class="custom-form-group">
                                 <span>Primary E-Mail (again):<span class="text-danger">*</span></span>
-                                <input type="email" class="custom-input">
+                                <input type="email" class="custom-input" required>
                             </div>
                             <div class="custom-form-group">
                                 <span>Phone:</span>
@@ -65,15 +65,15 @@
                             </div>
                             <div class="custom-form-group">
                                 <span>Institution:<span class="text-danger">*</span></span>
-                                <input type="text" class="custom-input" v-model="formData.institution">
+                                <input type="text" class="custom-input" v-model="formData.institution" required>
                             </div>
                             <div class="custom-form-group">
                                 <span>City:<span class="text-danger">*</span></span>
-                                <input type="text" class="custom-input" v-model="formData.city">
+                                <input type="text" class="custom-input" v-model="formData.city" required>
                             </div>
                             <div class="custom-form-group">
                                 <span>Country:<span class="text-danger">*</span></span>
-                                <input type="text" class="custom-input" v-model="formData.country">
+                                <input type="text" class="custom-input" v-model="formData.country" required>
                             </div>
                         </div>
                     </div>
@@ -85,12 +85,12 @@
                                     <div class="d-flex mb-3" style="gap:10px">
                                         <span>(1)<span class="text-danger">*</span></span>
                                         <input type="text" class="custom-input flex-grow-1"
-                                            v-model="formData.areaOfExpertise[0]">
+                                            v-model="formData.areaOfExpertise[0]" required>
                                     </div>
                                     <div class="d-flex  mb-3" style="gap:10px">
                                         <span>(2)<span class="text-danger">*</span></span>
                                         <input type="text" class="custom-input flex-grow-1"
-                                            v-model="formData.areaOfExpertise[1]">
+                                            v-model="formData.areaOfExpertise[1]" required>
                                     </div>
                                     <div class="d-flex  mb-3" style="gap:10px">
                                         <span>(3) &nbsp;</span>
@@ -120,11 +120,11 @@
                         <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 p-4">
                             <div class="custom-form-group">
                                 <span>Password:<span class="text-danger">*</span></span>
-                                <input type="password" class="custom-input" v-model="formData.password">
+                                <input type="password" class="custom-input" v-model="formData.password" required>
                             </div>
                             <div class="custom-form-group">
                                 <span>Confirm Password:<span class="text-danger">*</span></span>
-                                <input type="password" class="custom-input">
+                                <input type="password" class="custom-input" required>
                             </div>
                         </div>
                     </div>

@@ -66,6 +66,7 @@ export default {
         logout() {
             localStorage.removeItem("userEmail");
             localStorage.removeItem("isAdmin");
+            localStorage.removeItem("userName");
             this.$router.push({ name: 'Home' });
         }
     },

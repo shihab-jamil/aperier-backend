@@ -16,7 +16,7 @@
                         </router-link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About Us</a>
+                        <a class="nav-link" href="/#about">About Us</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -51,7 +51,10 @@
                 </ul>
                 <ul class="navbar-nav w-50 mb-2 mb-lg-0">
                     <li class="nav-item w-100">
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        <div class="input-group">
+                            <input v-model="searchText" @keyup.enter="search" type="text" class="form-control" placeholder="Search study or author" aria-label="Search study or author" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2" @click="search"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <router-link :to="{ name: 'Login' }" class="nav-link">Login</router-link>
@@ -63,13 +66,22 @@
             </div>
         </div>
     </nav>
-
-
 </template>
 
 <script>
 export default {
+    data(){
+        return {
+            searchText : ""
+        }
+    },
 
+    methods : {
+        search(){
+            if(!this.searchText) return;
+            this.$router.push({ name : 'Search', query : { q : this.searchText } });
+        }
+    }
 }
 </script>
 

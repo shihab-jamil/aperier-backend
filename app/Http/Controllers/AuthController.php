@@ -3,9 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Models\AreasOfExpertise;
+use App\Models\PasswordReset;
 use App\Models\User;
+use Illuminate\Auth\Notifications\ResetPassword;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
+use Throwable;
 
 class AuthController extends Controller
 {
@@ -124,5 +128,55 @@ class AuthController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function forgetPassword(Request $request){
+        try {
+            $user = User::where('email', $request->email)->first();
+            if ($user) {
+                $resetToken = str_pad(random_int(1,9999), 4, '0', STR_PAD_LEFT);
+                $passwordReset = PasswordReset::where('email', $user->email)->first();
+                if(!$passwordReset){
+                    PasswordReset::create([
+                        'email' => $user->email,
+                        'token' => $resetToken,
+                    ]);
+                }else{
+                    PasswordReset::where('email', $user->email)->update([
+                        'email' => $user->email,
+                        'token' => $resetToken,
+                    ]);
+                }
+
+                Mail::to($user)->send(new \App\Mail\ResetPassword($user->email, $resetToken));
+                return sendSuccessResponse($user, 'We have sent an email to recover your password', 200);
+            } else {
+                return sendErrorResponse('Could not find account', 422);
+            }
+        } catch (Throwable $e) {
+            return sendErrorResponse('Database Error!', $e->getMessage(), 500);
+        }
+    }
+
+    public function resetPassword(Request $request){
+        try {
+            $user = User::where('email', $request->email)->first();
+            if ($user) {
+                $resetRequest = PasswordReset::where('email', $request->email)->first();
+                if($resetRequest && $resetRequest->token == $request->token){
+                    $user->update([
+                        'password' => Hash::make($request->newPassword),
+                    ]);
+                    PasswordReset::where('email', $request->email)->delete();
+                    return sendSuccessResponse($user, 'Password Reset Successfully, Please Login Again ', 200);
+                }else{
+                    return sendErrorResponse('Reset Token Already Used', 422);
+                }
+            }else {
+                return sendErrorResponse('No Record Found, Incorrect Email Address', 422);
+            }
+        } catch (\Throwable $e) {
+            return sendErrorResponse('Database Error!', $e->getMessage(), 500);
+        }
     }
 }

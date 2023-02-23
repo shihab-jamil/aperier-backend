@@ -1,11 +1,7 @@
 <template>
     <section style=" margin-top: 60px;">
-        <div class="container">
+        <div class="container p-5">
             <div class="row gy-4">
-                <div class="col-12 search-group">
-                    <input type="text" placeholder="Search">
-                    <i class="fa-brands fa-searchengin fa-lg"></i>
-                </div>
                 <div class="col-12">
                     <p class="issue-title">Volumes and Issues</p>
                     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -14,16 +10,6 @@
                                 :data-bs-target="'#pills-'+item" type="button" role="tab" :aria-controls="'pills-'+item"
                                 aria-selected="true">Volume {{ item }}</button>
                         </li>
-<!--                        <li class="nav-item" role="presentation" v-for="item in studyList.volumeCount">-->
-<!--                            <button class="nav-link text-secondary" :class="item === 1 ? 'active' : ''" id="pills-home-tab" data-bs-toggle="pill"-->
-<!--                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"-->
-<!--                                    aria-selected="true">Volume {{ item }}</button>-->
-<!--                        </li>-->
-<!--                        <li class="nav-item" role="presentation">-->
-<!--                            <button class="nav-link text-secondary" id="pills-profile-tab" data-bs-toggle="pill"-->
-<!--                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"-->
-<!--                                aria-selected="false">Volume 2</button>-->
-<!--                        </li>-->
                         <li class="nav-item  flex-grow-1 text-end text-secondary align-self-center" role="presentation">
                             {{ studyList.numOfArticle }} Articles
                         </li>
@@ -44,7 +30,7 @@
                                         <JournalListCardComponent
                                             class="col-12"
                                             :title="item.title"
-                                            :author="item.first_name+' '+item.middle_name+' '+item.last_name"
+                                            :author="item.first_name+' '+(item.middle_name ?? '')+' '+item.last_name"
                                             :tag="item.name"
                                             :volume="item.volume"
                                             :issue="item.issue"

@@ -7,7 +7,7 @@
                 <span class="nav-link" data-widget="pushmenu" role="button"><i class="fas fa-bars"></i></span>
             </li>
             <li class="nav-item">
-                <span class="text-lg font-weight-bold">{{ 'Shihab Jamil' }}</span>
+                <span class="text-lg font-weight-bold">{{ fullName }}</span>
             </li>
         </ul>
     </nav>
@@ -16,7 +16,14 @@
 
 <script>
 export default {
-
+    data(){
+        return {
+            fullName : null
+        }
+    },
+    mounted(){
+        this.fullName = localStorage.getItem("userName");
+    }
 }
 </script>
 

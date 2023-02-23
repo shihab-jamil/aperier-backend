@@ -13,15 +13,15 @@
                     <div class="card col-12 ">
                         <div class="card-body d-flex flex-column p-5" style="gap:30px">
                             <div class="row">
-                                <div class="col-2">SELECT Status:*</div>
+                                <div class="col-2">SELECT Status:<span class="text-danger">*</span></div>
                                 <div class="col-4">
-                                    <select name="" class="w-100" id="" v-model="formData.status">
+                                    <select name="" class="w-100" id="" v-model="formData.status" @change="statusChange">
                                         <option v-for="item in metadata.status" :key="item.id" :value="item.id">{{ item.name }}</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-2">SELECT JOURNAL:*</div>
+                                <div class="col-2">SELECT JOURNAL:<span class="text-danger">*</span></div>
                                 <div class="col-4">
                                     <select name="" class="w-100" id="" v-model="formData.journals">
                                         <option v-for="item in metadata.journals" :key="item.id" :value="item.id">{{ item.title }}</option>
@@ -29,7 +29,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-2">Study type:*</div>
+                                <div class="col-2">Study type:<span class="text-danger">*</span></div>
                                 <div class="col-4">
                                     <select name="" class="w-100" id="" v-model="formData.studyTypes">
                                         <option v-for="item in metadata.studyTypes" :key="item.id" :value="item.id">{{ item.name }}</option>
@@ -37,30 +37,33 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-2">Title:*</div>
+                                <div class="col-2">Title:<span class="text-danger">*</span></div>
                                 <div class="col-10">
                                     <textarea name="" id="" cols="30" rows="2" class="w-100 p-3" placeholder="Title" v-model="formData.title"></textarea>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-2">Abstract:*</div>
+                                <div class="col-2">Abstract:<span class="text-danger">*</span></div>
                                 <div class="col-10">
                                     <textarea name="" id="" cols="30" rows="13" class="w-100 p-3" placeholder="Abstract" v-model="formData.abstract"></textarea>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-2">Keywords:*</div>
+                                <div class="col-2">Keywords:<span class="text-danger">*</span></div>
                                 <div class="col-10">
                                     <textarea name="" id="" cols="30" rows="2" class="w-100 p-3" placeholder="Keywords; seperate the keywords with semicolon (;)" v-model="formData.keywords"></textarea>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row d-flex align-items-center">
                                 <div class="col-2">manuscript file</div>
-                                <div class="col-10 text-primary" @click="downloadURI('studies/'+study.manuscript_file)">{{ study.manuscript_file }}</div>
+                                <div class="col-8 text-primary" v-if="formData.manuscript_file_temp" ><span >{{ this.$refs.file.files[0].name }}</span></div>
+                                <div class="col-8 text-primary" v-else><span @click="downloadURI('studies/'+study.manuscript_file)">{{ study.manuscript_file }}</span></div>
+                                <input class="form-control" hidden  @change="handleFileUpload()" type="file" ref="file" name="file" id="file" />
+                                <button class="col-2 btn-register" @click="openFile()">Upload PDF</button>
                             </div>
                             <div class="row">
                                 <div class="col-2">Authorship file</div>
-                                <div class="col-10 text-primary" @click="downloadURI('authors/'+study.authorship_file)">{{ study.authorship_file }}</div>
+                                <div class="col-10 text-primary"><span  @click="downloadURI('authors/'+study.authorship_file)">{{ study.authorship_file }}</span></div>
                             </div>
                             <div class="row">
                                 <span class="nav-link py-2">Authors</span>
@@ -72,7 +75,7 @@
                                     <div class="col-10 row">
                                         <div class="col-6 d-flex flex-column pl-3" style="gap:15px">
                                             <div class="row">
-                                                <div class="col-4">Prefix:*</div>
+                                                <div class="col-4">Prefix:<span class="text-danger">*</span></div>
                                                 <div class="col-8">
                                                     <select name="" class="w-100" id="" v-model="item.prefix">
                                                         <option value="Dr.">Dr.</option>
@@ -84,13 +87,13 @@
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col-4">First (Given) Name:*</div>
+                                                <div class="col-4">First (Given) Name:<span class="text-danger">*</span></div>
                                                 <div class="col-8">
                                                     <input type="text" class="w-100" v-model="item.first_name">
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col-4">Last (Family) Name:*</div>
+                                                <div class="col-4">Last (Family) Name:<span class="text-danger">*</span></div>
                                                 <div class="col-8">
                                                     <input type="text" class="w-100" v-model="item.last_name">
                                                 </div>
@@ -98,7 +101,7 @@
                                         </div>
                                         <div class="col-6 d-flex flex-column pl-5" style="gap:15px">
                                             <div class="row">
-                                                <div class="col-4">Correspondence:*</div>
+                                                <div class="col-4">Correspondence:<span class="text-danger">*</span></div>
                                                 <div class="col-8 ">
                                                     <input type="checkbox" class="" v-model="item.correspondence">
                                                 </div>
@@ -110,14 +113,14 @@
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col-4">E-Mail:*</div>
+                                                <div class="col-4">E-Mail:<span class="text-danger">*</span></div>
                                                 <div class="col-8">
                                                     <input type="email" class="w-100" v-model="item.email">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-12 row pl-3 mt-3">
-                                            <div class="col-2">Affiliation: *</div>
+                                            <div class="col-2">Affiliation: <span class="text-danger">*</span></div>
                                             <div class="col-10 pr-0 mr-0">
                                                 <input type="text" class="w-100" v-model="item.affiliation">
                                             </div>
@@ -243,34 +246,34 @@
                                     <div class="form-check mb-2">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" v-model="formData.authors_agreement">
                                         <label class="form-check-label" for="flexCheckDefault">
-                                            * Confirm that All co-authors are listed and agree the submission.
+                                            <span class="text-danger">*</span> Confirm that All co-authors are listed and agree the submission.
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" v-model="formData.not_published">
                                         <label class="form-check-label" for="flexCheckChecked">
-                                            * Confirm that the manuscript has been submitted solely to this journal and
+                                            <span class="text-danger">*</span> Confirm that the manuscript has been submitted solely to this journal and
                                             is not published, in press, or submitted elsewhere.
                                         </label>
                                     </div>
                                     <div class="form-check mb-2">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1" v-model="formData.ethical_guidelines">
                                         <label class="form-check-label" for="flexCheckDefault1">
-                                            * Confirm that all the research meets the ethical guidelines, including
+                                            <span class="text-danger">*</span> Confirm that all the research meets the ethical guidelines, including
                                             adherence to the legal requirements of the study country.
                                         </label>
                                     </div>
                                     <div class="form-check mb-2">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2" v-model="formData.third_party_acknowledgement">
                                         <label class="form-check-label" for="flexCheckDefault2">
-                                            * I/We have declared any potential conflict of interest in the research. Any
+                                            <span class="text-danger">*</span> I/We have declared any potential conflict of interest in the research. Any
                                             support from a third party has been noted in the Acknowledgements.
                                         </label>
                                     </div>
                                 </div>
                             </div>
                             <div class="row align-self-end">
-                                <button class="btn-register" @click="submitForm()">Submit Manuscript</button>
+                                <button class="btn-register" @click="submitForm()">Save Changes</button>
                             </div>
                         </div>
                         <!-- main content end -->
@@ -405,7 +408,6 @@ export default {
         },
         handleFileUploadAuthor(){
             this.formData.author_file_temp = this.$refs.file2.files[0]
-            this.fullData.append('authors_file', this.formData.author_file_temp)
         },
         openFile(){
             document.getElementById("file").click();
@@ -415,7 +417,14 @@ export default {
         },
 
         async submitForm(){
-            let response = await axios.post(`${config.domain}/api/admin-study/${this.$route.params.id}`, this.formData)
+            if(this.formData.status === 6 && this.study.status_id !== 6 && !this.formData.manuscript_file_temp){
+                alert("You must select finalize PDF file to submit!!")
+                return;
+            }
+
+            this.fullData.append('manuscript_file', this.formData.manuscript_file_temp)
+            this.fullData.append('data', JSON.stringify(this.formData))
+            let response = await axios.post(`${config.domain}/api/admin-study/${this.$route.params.id}`, this.fullData)
             // console.log(response)
             if(response.data.success) {
                 this.$swal({
@@ -444,6 +453,15 @@ export default {
                 })
                 .catch(() => console.log('error occured'))
         },
+
+        statusChange(){
+            if(this.formData.status !== 6 && this.study.status_id === 6){
+                if(!confirm("This study will not be published on the journal volume, are you sure about this step?")){
+                    this.formData.status = this.study.status_id
+                    return;
+                }
+            }
+        }
     },
     async mounted() {
         let response = await axios.get(`${config.domain}/api/study/`+ this.$route.params.id)
@@ -455,10 +473,9 @@ export default {
             return item;
         })
 
-
         //this.formData = this.study
         this.formData.status = this.study.status_id
-        this.formData.title = this.study.title
+        this.formData.title = this.study.study_title
         this.formData.abstract = this.study.abstract
         this.formData.journals = this.study.journal_id
         this.formData.studyTypes = this.study.study_type_id

@@ -30,6 +30,10 @@ import PublishedStudies from "../Pages/Admin/PublishedStudies.vue";
 import ArchivedStudies from "../Pages/Admin/ArchivedStudies.vue";
 import StudyAction from "../Pages/Admin/StudyAction.vue";
 import AppService from "../Service/AppService";
+import PreviewPdf from "../Pages/PreviewPdf.vue";
+import SearchResult from "../Pages/Journal/SearchResult.vue";
+import ForgetPassword from "../Pages/Auth/ForgetPassword.vue";
+import ResetPassword from "../Pages/Auth/ResetPassword.vue";
 
 
 const routes = [
@@ -52,6 +56,12 @@ const routes = [
     path: '/news-list',
     name: 'News List',
     component: NewsList
+  },
+
+  {
+    path: '/preview-pdf/:url',
+    name: 'Preview Pdf',
+    component: PreviewPdf,
   },
 
   {
@@ -107,6 +117,25 @@ const routes = [
     name: 'Sign Up Success',
     component: SignUpSuccess,
   },
+    {
+        path: '/forget-password',
+        name: 'Forget Password',
+        component: ForgetPassword,
+    },
+    {
+        path: '/reset-password',
+        name: 'Reset Password',
+        component: ResetPassword,
+        props: true
+    },
+
+    {
+      path: '/search',
+      name : 'Search',
+      component: SearchResult,
+        props: true
+    },
+
   {
     path: '/author/dashboard',
     name: 'Author Dashboard',
@@ -138,7 +167,9 @@ const routes = [
       beforeEnter: (to, from, next) => {
           if (AppService.isLoggedIn() && !AppService.isAdmin()) {
               next();
-          } else {
+          } else if(!AppService.isLoggedIn()){
+              next({ name: 'Login' })
+          }else{
               next({ name: 'Home' })
           }
       }
