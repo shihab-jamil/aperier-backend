@@ -241,7 +241,6 @@ export default {
         downloadAuthorshipForm() {
             console.log("Clicked")
             let url = `${config.domain}/storage/files/MANUSCRIPT SUBMISSION FORM.docx`;
-            console.log(url)
             window.open(url)
         },
 

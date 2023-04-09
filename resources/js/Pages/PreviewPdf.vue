@@ -7,7 +7,6 @@ export default {
     name: "PreviewPdf",
     props : ["url"],
     mounted() {
-        console.log(this.url)
     }
 }
 </script>

@@ -53,7 +53,6 @@ export default {
         this.payload.query = this.$route.query.q
         await axios.post(`${config.domain}/api/search-study`, this.payload).then(response => {
             this.studyList = response.data.data
-            console.log("response", response)
         }).catch(error => {
             console.log(error)
         })
@@ -62,7 +61,6 @@ export default {
         async loadSearch(){
             await axios.post(`${config.domain}/api/search-study`, this.payload).then(response => {
                 this.studyList = response.data.data
-                console.log("response", response)
             }).catch(error => {
                 console.log(error)
             })

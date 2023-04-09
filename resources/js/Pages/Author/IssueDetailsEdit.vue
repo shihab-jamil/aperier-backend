@@ -280,7 +280,6 @@ export default {
     async submitForm(){
       this.fullData.append('data', JSON.stringify(this.formData))
       let response = await axios.post(`${config.domain}/api/update-study`, this.fullData)
-      console.log(response)
       if(response.data.success) {
         this.$swal({
           text: response.data.message,

@@ -64,7 +64,6 @@ export default {
     async handleForm() {
       await axios.post(`${config.domain}/api/login`, this.formData).then(response => {
         if (response.data.success) {
-            console.log(response)
           this.$swal({
             text: "Login successfully",
             icon: "success"

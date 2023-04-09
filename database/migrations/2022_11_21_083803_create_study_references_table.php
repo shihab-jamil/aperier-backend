@@ -16,8 +16,8 @@ return new class extends Migration
         Schema::create('study_references', function (Blueprint $table) {
             $table->id();
             $table->foreignId("study_id")->references("id")->on("study");
-            $table->string("reference_title");
-            $table->string("reference_url")->nullable();
+            $table->longText("reference_title");
+            $table->longText("reference_url")->nullable();
             $table->timestamps();
         });
     }

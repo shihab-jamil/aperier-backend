@@ -70,7 +70,7 @@ export default {
             console.log(error)
         })
 
-        console.log(this.studyList[this.studyList.volume[0]])
+
     }
 }
 </script>
